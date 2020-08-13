@@ -1,15 +1,11 @@
 .container {
-  text-align: center;
-  width: 80vw;
-  margin: 0rem auto 1rem auto;
+  width: 95vw;
+  margin: 5rem auto 1rem auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 60vw;
-  }
-
-  .singleImage {
-    margin-bottom: 0;
+    margin: 0rem auto 1rem auto;
   }
 }
