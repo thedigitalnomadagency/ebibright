@@ -16,7 +16,7 @@ const getImages = graphql`
       }
     }
 
-    file(relativePath: { eq: "Slide2.png" }) {
+    file(relativePath: { eq: "Slide3.png" }) {
       childImageSharp {
         fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_noBase64
