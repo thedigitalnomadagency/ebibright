@@ -1,0 +1,20 @@
+.container {
+  text-align: center;
+  width: 80vw;
+  margin: 1rem auto 10rem auto;
+}
+
+.singleImage {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 60vw;
+  }
+
+  .singleImage {
+    margin-bottom: 0;
+  }
+}

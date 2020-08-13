@@ -1,5 +1,15 @@
 import React from "react"
 
+//components
+import Layout from "../components/Layout"
+import Images from "../components/Images"
+// import Countdown from "../components/Countdown"
+
 export default function Home() {
-  return <div>Official Website Of Ebi Bright</div>
+  return (
+    <Layout>
+      <Images />
+      {/* <Countdown /> */}
+    </Layout>
+  )
 }
