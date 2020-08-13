@@ -2,7 +2,7 @@ import React from "react"
 import moment from "moment"
 
 //styling
-import styles from "../styles/countdown.module.css"
+import styles from "./countdown.module.css"
 
 class Countdown extends React.Component {
   state = {

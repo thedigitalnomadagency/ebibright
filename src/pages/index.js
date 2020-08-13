@@ -2,8 +2,8 @@ import React from "react"
 
 //components
 import Layout from "../components/Layout"
-import Images from "../components/Images"
-import Countdown from "../components/Countdown"
+import Images from "../components/Images/Images"
+import Countdown from "../components/Countdown/Countdown"
 
 export default function Home() {
   return (

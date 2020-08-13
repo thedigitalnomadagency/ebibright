@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 //styling
-import styles from "../styles/images.module.css"
+import styles from "./images.module.css"
 
 const getImages = graphql`
   {
