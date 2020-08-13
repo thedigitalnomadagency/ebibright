@@ -33,8 +33,6 @@ export default () => {
     file,
   } = useStaticQuery(getImages)
 
-  console.log(file)
-
   return (
     <section className={styles.container}>
       <article className={styles.singleImage}>
