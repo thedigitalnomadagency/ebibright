@@ -4,11 +4,6 @@
   margin: 0rem auto 1rem auto;
 }
 
-.singleImage {
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 60vw;

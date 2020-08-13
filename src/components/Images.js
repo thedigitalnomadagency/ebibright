@@ -7,7 +7,7 @@ import styles from "../styles/images.module.css"
 
 const getImages = graphql`
   {
-    fluid: file(relativePath: { eq: "Slide1.PNG" }) {
+    fluid: file(relativePath: { eq: "img1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_noBase64
@@ -16,7 +16,7 @@ const getImages = graphql`
       }
     }
 
-    file(relativePath: { eq: "Slide3.png" }) {
+    file(relativePath: { eq: "img2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_noBase64
@@ -41,7 +41,6 @@ export default () => {
       <article className={styles.singleImage}>
         <Image fluid={file.childImageSharp.fluid} />
       </article>
-      <h3>Official Launch: September 1st, 2020</h3>
     </section>
   )
 }
