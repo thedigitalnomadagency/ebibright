@@ -15,6 +15,7 @@ const getImages = graphql`
         }
       }
     }
+
     file(relativePath: { eq: "Slide2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1080, quality: 100) {
@@ -31,6 +32,8 @@ export default () => {
     fluid: { childImageSharp: fluid },
     file,
   } = useStaticQuery(getImages)
+
+  console.log(file)
 
   return (
     <section className={styles.container}>
