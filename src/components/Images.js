@@ -40,7 +40,7 @@ export default () => {
       <article className={styles.singleImage}>
         <Image fluid={file.childImageSharp.fluid} />
       </article>
-      <h3>Official Launch: September 1st 2020</h3>
+      <h3>Official Launch: September 1st, 2020</h3>
     </section>
   )
 }
