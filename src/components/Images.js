@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-// import Img from "../images/Slide1.PNG"
 
 //styling
 import styles from "../styles/images.module.css"
@@ -16,7 +15,7 @@ const getImages = graphql`
         }
       }
     }
-    fluid2: file(relativePath: { eq: "Slide4.png" }) {
+    file(relativePath: { eq: "Slide2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_noBase64
@@ -30,7 +29,7 @@ const getImages = graphql`
 export default () => {
   const {
     fluid: { childImageSharp: fluid },
-    fluid2,
+    file,
   } = useStaticQuery(getImages)
 
   return (
@@ -39,8 +38,9 @@ export default () => {
         <Image fluid={fluid.fluid} />
       </article>
       <article className={styles.singleImage}>
-        <Image fluid={fluid2.childImageSharp.fluid} />
+        <Image fluid={file.childImageSharp.fluid} />
       </article>
+      <h3>Official Launch: September 1st 2020</h3>
     </section>
   )
 }
