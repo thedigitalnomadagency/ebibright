@@ -51,28 +51,28 @@ class Countdown extends React.Component {
         <div className={styles.countdownWrapper}>
           {days && (
             <div className={styles.countdownItem}>
-              <SVGCircle radius={daysRadius} />
+              {/* <SVGCircle radius={daysRadius} /> */}
               {days}
               <span>days</span>
             </div>
           )}
           {hours && (
             <div className={styles.countdownItem}>
-              <SVGCircle radius={hoursRadius} />
+              {/* <SVGCircle radius={hoursRadius} /> */}
               {hours}
               <span>hours</span>
             </div>
           )}
           {minutes && (
             <div className={styles.countdownItem}>
-              <SVGCircle radius={minutesRadius} />
+              {/* <SVGCircle radius={minutesRadius} /> */}
               {minutes}
               <span>minutes</span>
             </div>
           )}
           {seconds && (
             <div className={styles.countdownItem}>
-              <SVGCircle radius={secondsRadius} />
+              {/* <SVGCircle radius={secondsRadius} /> */}
               {seconds}
               <span>seconds</span>
             </div>
