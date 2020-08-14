@@ -25,14 +25,6 @@
   text-transform: uppercase;
 }
 
-.countdownSvg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .countdownWrapper {
     display: flex;
@@ -61,13 +53,5 @@
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-  }
-
-  .countdownSvg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
   }
 }
