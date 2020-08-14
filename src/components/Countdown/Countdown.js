@@ -38,7 +38,7 @@ export default ({ timeTillDate, timeFormat }) => {
   }
 
   return (
-    <div>
+    <>
       <div className={styles.countdownWrapper}>
         {days && (
           <div className={styles.countdownItem}>
@@ -65,6 +65,6 @@ export default ({ timeTillDate, timeFormat }) => {
           </div>
         )}
       </div>
-    </div>
+    </>
   )
 }
