@@ -1,11 +1,11 @@
 import React from "react"
 
 //styling
-import StyledNavbar from "./Navbar.styles"
+import Container from "./Navbar.styles"
 
 export default () => {
   return (
-    <StyledNavbar>
+    <Container>
       <nav className="navbar">
         <div className="logo-wrapper">
           <span className="logo">Ebi Bright</span>
@@ -30,6 +30,6 @@ export default () => {
           </div>
         </div>
       </nav>
-    </StyledNavbar>
+    </Container>
   )
 }

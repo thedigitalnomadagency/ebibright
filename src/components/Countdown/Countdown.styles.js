@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const CountWrapper = styled.div`
+export default styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,16 +26,16 @@ export const CountWrapper = styled.div`
       width: 100px;
       height: 100px;
     }
-  }
 
-  .countdownItem span {
-    color: #333;
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
+    span {
+      color: #333;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
 
-    @media screen and (min-width: 768px) {
-      font-size: 12px;
+      @media screen and (min-width: 768px) {
+        font-size: 12px;
+      }
     }
   }
 `

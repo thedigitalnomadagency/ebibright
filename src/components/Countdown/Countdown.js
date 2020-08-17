@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import moment from "moment"
 
 //styling
-import { CountWrapper } from "./Countdown.styles"
+import CountWrapper from "./Countdown.styles"
 
 export default ({ timeTillDate, timeFormat }) => {
   const [days, setDays] = useState(undefined)

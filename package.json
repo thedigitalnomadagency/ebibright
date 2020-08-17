@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "ebi-bright-website",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "The Official Campaign Website Of Ebi Bright",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
