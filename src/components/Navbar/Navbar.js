@@ -1,26 +1,35 @@
 import React from "react"
 
 //styling
-import { Logo, NavWrapper, NavMenu, NavItem, NavLink } from "./Navbar.styles"
+import StyledNavbar from "./Navbar.styles"
 
 export default () => {
   return (
-    <NavWrapper>
-      <Logo>Logo</Logo>
-      <NavMenu>
-        <NavItem>
-          <NavLink href="/">Home</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/">About</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/">Contact</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/">Donate</NavLink>
-        </NavItem>
-      </NavMenu>
-    </NavWrapper>
+    <StyledNavbar>
+      <nav className="navbar">
+        <div className="logo-wrapper">
+          <span className="logo">Ebi Bright</span>
+        </div>
+        <div className="nav-menu-wrapper">
+          <div className="nav-menu">
+            <a href="/" className="nav-item">
+              Home
+            </a>
+            <a href="/" className="nav-item">
+              About
+            </a>
+            <a href="/" className="nav-item">
+              Contact
+            </a>
+          </div>
+
+          <div>
+            <a href="/" className="button">
+              Donate
+            </a>
+          </div>
+        </div>
+      </nav>
+    </StyledNavbar>
   )
 }
