@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import moment from "moment"
 
 //styling
-import styles from "./countdown.module.css"
+import { CountWrapper } from "./Countdown.styles"
 
 export default ({ timeTillDate, timeFormat }) => {
   const [days, setDays] = useState(undefined)
@@ -38,33 +38,31 @@ export default ({ timeTillDate, timeFormat }) => {
   }
 
   return (
-    <>
-      <div className={styles.countdownWrapper}>
-        {days && (
-          <div className={styles.countdownItem}>
-            {days}
-            <span>days</span>
-          </div>
-        )}
-        {hours && (
-          <div className={styles.countdownItem}>
-            {hours}
-            <span>hours</span>
-          </div>
-        )}
-        {minutes && (
-          <div className={styles.countdownItem}>
-            {minutes}
-            <span>minutes</span>
-          </div>
-        )}
-        {seconds && (
-          <div className={styles.countdownItem}>
-            {seconds}
-            <span>seconds</span>
-          </div>
-        )}
-      </div>
-    </>
+    <CountWrapper>
+      {days && (
+        <div className="countdownItem">
+          {days}
+          <span>days</span>
+        </div>
+      )}
+      {hours && (
+        <div className="countdownItem">
+          {hours}
+          <span>hours</span>
+        </div>
+      )}
+      {minutes && (
+        <div className="countdownItem">
+          {minutes}
+          <span>minutes</span>
+        </div>
+      )}
+      {seconds && (
+        <div className="countdownItem">
+          {seconds}
+          <span>seconds</span>
+        </div>
+      )}
+    </CountWrapper>
   )
 }

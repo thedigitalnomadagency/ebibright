@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 //styling
-import styles from "./images.module.css"
+import { ImgWrapper } from "./Images.styles"
 
 const getImages = graphql`
   {
@@ -34,13 +34,13 @@ export default () => {
   } = useStaticQuery(getImages)
 
   return (
-    <section className={styles.container}>
-      <article className={styles.singleImage}>
+    <ImgWrapper>
+      <article>
         <Image fluid={fluid.fluid} />
       </article>
-      <article className={styles.singleImage}>
+      <article>
         <Image fluid={file.childImageSharp.fluid} />
       </article>
-    </section>
+    </ImgWrapper>
   )
 }

@@ -1,12 +1,16 @@
 import React from "react"
 
+//components
+import Navbar from "./Navbar/Navbar"
+
 //styling
 import "../styles/global.css"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <main className="content">{children}</main>
+      <Navbar />
+      <main>{children}</main>
     </>
   )
 }

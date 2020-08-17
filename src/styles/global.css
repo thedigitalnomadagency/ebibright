@@ -9,13 +9,3 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-
-.content {
-  min-height: 87vh;
-}
-
-h1 {
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
-}
