@@ -1,32 +1,57 @@
 import tw from "twin.macro"
 import styled from "styled-components"
+import Container from "../Layout/Container"
 
-export default styled.div`
-  .navbar {
-    ${tw`flex flex-wrap items-center justify-between p-6 bg-gray-800`}
+// ${tw``}
+
+export const Navbar = styled.nav`
+  ${tw`shadow`}
+`
+export const InnerContainer = styled(Container)`
+  .wrapper {
+    ${tw`flex justify-between p-3 items-center`}
   }
 
-  .logo-wrapper {
-    ${tw`flex items-center flex-shrink-0 mr-6 text-white`}
+  .main-menu {
+    ${tw`
+    hidden
+    lg:block
+    `}
   }
 
-  .logo {
-    ${tw`text-xl font-bold`}
+  .main-options {
+    ${tw`flex justify-between`}
   }
 
-  .nav-menu-wrapper {
-    ${tw`flex-grow block w-full sm:flex sm:items-center sm:w-auto`}
+  .main-item {
+    ${tw`px-3`}
   }
 
-  .nav-menu {
-    ${tw`text-sm sm:flex-grow`}
+  .icon-wrapper {
+    ${tw`
+    border
+    p-1
+    rounded
+    lg:hidden
+    `}
   }
 
-  .nav-item {
-    ${tw`block mt-4 mr-4 text-teal-200 sm:inline-block sm:mt-0 hover:text-white`}
+  .icon {
+    ${tw`
+    h-6
+    w-6
+    text-gray-500
+    `}
   }
 
-  .button {
-    ${tw`inline-block px-4 py-2 mt-4 text-sm leading-none text-white border border-white rounded hover:border-transparent hover:text-blue-500 hover:bg-white md:mt-0`}
+  .mobile-menu {
+    ${({ show }) => (show ? tw`block` : tw`hidden`)}
+  }
+
+  .mobile-item {
+    ${tw`
+      pl-2
+      py-2
+    `}
   }
 `
