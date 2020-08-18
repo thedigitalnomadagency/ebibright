@@ -6,7 +6,7 @@ import Navbar from "./Navbar/Navbar"
 //styling
 import "../styles/global.css"
 
-const Layout = ({ children }) => {
+export default ({ children }) => {
   return (
     <>
       <Navbar />
@@ -14,5 +14,3 @@ const Layout = ({ children }) => {
     </>
   )
 }
-
-export default Layout
