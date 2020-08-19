@@ -1,10 +1,12 @@
 import tw from "twin.macro"
 import styled from "styled-components"
+import { motion } from "framer-motion"
+
 import Container from "../Layout/Container"
 
 // ${tw``}
 
-export const Navbar = styled.nav`
+export const Navbar = styled(motion.nav)`
   ${tw`shadow`}
 `
 export const InnerContainer = styled(Container)`

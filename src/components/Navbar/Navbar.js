@@ -8,7 +8,7 @@ export default () => {
   const [show, setShow] = useState(false)
 
   return (
-    <Navbar>
+    <Navbar initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <InnerContainer show={show}>
         <div className="wrapper">
           <div className="logo-box">
