@@ -11167,11 +11167,6 @@ react-clientside-effect@^1.2.2:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-react-component-countdown-timer@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/react-component-countdown-timer/-/react-component-countdown-timer-0.1.8.tgz#64cfb4c9212f3f5349b490a3458cae6f32e4271a"
-  integrity sha512-pqJGRF9RjRDLCvRExF4Id+sQ4ORPFFn8ZLDoHMlgMrPDxfGRz6gdbHnvIxU0VyejWE2zeaXxgkxpvl8ghuTD5A==
-
 react-dev-utils@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"

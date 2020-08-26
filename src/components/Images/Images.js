@@ -7,7 +7,7 @@ import { ImgWrapper } from "./Images.styles"
 
 const getImages = graphql`
   {
-    fluid: file(relativePath: { eq: "img1.png" }) {
+    fluid: file(relativePath: { eq: "img4.PNG" }) {
       childImageSharp {
         fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_noBase64
@@ -16,7 +16,7 @@ const getImages = graphql`
       }
     }
 
-    file(relativePath: { eq: "img2.png" }) {
+    file(relativePath: { eq: "img5.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1080, quality: 100) {
           ...GatsbyImageSharpFluid_noBase64
