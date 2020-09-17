@@ -26,5 +26,14 @@ module.exports = {
         icon: `src/images/img3.png`,
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: [`Metropolis`],
+          urls: ["/fonts/font.css"],
+        },
+      },
+    },
   ],
 }

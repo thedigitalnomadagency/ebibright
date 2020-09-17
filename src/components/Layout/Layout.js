@@ -1,7 +1,6 @@
 import React from "react"
 
 //components
-import Container from "./Container"
 import Navbar from "../Navbar/Navbar"
 
 //styling
@@ -11,9 +10,7 @@ export default ({ children }) => {
   return (
     <>
       <Navbar />
-      <Container>
-        <main>{children}</main>
-      </Container>
+      <main>{children}</main>
     </>
   )
 }

@@ -1,59 +1,32 @@
-import tw from "twin.macro"
-import styled from "styled-components"
-import { motion } from "framer-motion"
+import tw, { styled } from "twin.macro"
 
-import Container from "../Layout/Container"
+export const Wrapper = styled.nav`
+  ${tw`shadow flex items-center`}
+  height: 10vh;
 
-// ${tw``}
-
-export const Navbar = styled(motion.nav)`
-  ${tw`shadow`}
-`
-export const InnerContainer = styled(Container)`
-  .wrapper {
-    ${tw`flex justify-between p-3 items-center`}
+  .container {
+    ${tw`container mx-auto`}
   }
 
   .main-menu {
-    ${tw`
-    hidden
-    lg:block
-    `}
+    ${tw`hidden lg:flex justify-between items-center `}
   }
 
-  .main-options {
+  .links-wrapper {
     ${tw`flex justify-between`}
   }
 
-  .main-item {
-    ${tw`px-3`}
-  }
-
-  .icon-wrapper {
-    ${tw`
-    border
-    p-1
-    rounded
-    lg:hidden
-    `}
-  }
-
-  .icon {
-    ${tw`
-    h-6
-    w-6
-    text-gray-500
-    `}
+  .menu-item {
+    ${tw` mx-5 py-2 font-bold`}
+    color: #096537;
   }
 
   .mobile-menu {
-    ${({ show }) => (show ? tw`block` : tw`hidden`)}
+    ${tw`flex lg:hidden`}
   }
 
-  .mobile-item {
-    ${tw`
-      pl-2
-      py-2
-    `}
+  .donate-btn {
+    ${tw`text-white font-bold py-2 px-4 rounded`}
+    background-color: #e4161d;
   }
 `

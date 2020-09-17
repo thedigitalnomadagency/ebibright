@@ -1,12 +1,13 @@
 import React from "react"
 
 //components
-import Images from "../components/Images/Images"
+import Layout from "../components/Layout/Layout"
+import Hero from "../components/Hero/Hero"
 
 export default function Home() {
   return (
-    <>
-      <Images />
-    </>
+    <Layout>
+      <Hero />
+    </Layout>
   )
 }
