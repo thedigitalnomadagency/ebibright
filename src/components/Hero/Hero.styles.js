@@ -1,8 +1,8 @@
 import tw, { styled } from "twin.macro"
 
 export default styled.div`
-  ${tw``}
-  height:40vh;
+  ${tw`overflow-hidden`}
+  height:auto;
 
   @media screen and (min-width: 768px) {
     height: 80vh;

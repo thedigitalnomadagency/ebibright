@@ -34,7 +34,7 @@ export default () => {
             <Link to="/">Meet Ebi</Link>{" "}
           </li>
           <li className="menu-item">
-            <Link to="/">Take Action</Link>{" "}
+            <Link to="/">My Plans</Link>{" "}
           </li>
           <li className="menu-item">
             <Link to="/">Store</Link>{" "}
