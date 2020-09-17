@@ -7,7 +7,7 @@ import Wrapper from "./Hero.styles"
 
 const getImage = graphql`
   {
-    fluid: file(relativePath: { eq: "hero1.png" }) {
+    fluid: file(relativePath: { eq: "hero.png" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid_noBase64
@@ -21,6 +21,7 @@ export default () => {
   const {
     fluid: { childImageSharp: fluid },
   } = useStaticQuery(getImage)
+
   return (
     <Wrapper>
       {/* <div className="image-box">

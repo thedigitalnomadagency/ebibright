@@ -8,8 +8,12 @@ export const Wrapper = styled.nav`
     ${tw`container mx-auto`}
   }
 
+  .logo-box {
+    ${tw`w-32`}
+  }
+
   .main-menu {
-    ${tw`hidden lg:flex justify-between items-center `}
+    ${tw`hidden lg:flex justify-between items-center mx-4`}
   }
 
   .links-wrapper {
@@ -17,16 +21,20 @@ export const Wrapper = styled.nav`
   }
 
   .menu-item {
-    ${tw` mx-5 py-2 font-bold`}
-    color: #096537;
+    ${tw` mx-5 py-2 uppercase text-white  py-2 px-4 rounded text-sm`}
+    background-color: #e4161d;
   }
 
   .mobile-menu {
-    ${tw`flex lg:hidden`}
+    ${tw`flex lg:hidden justify-between items-center mx-5`}
   }
 
   .donate-btn {
-    ${tw`text-white font-bold py-2 px-4 rounded`}
+    ${tw`text-white  py-1 px-2 lg:py-2 lg:px-4 rounded uppercase text-sm md:text-base lg:text-sm `}
     background-color: #e4161d;
+  }
+
+  .menu-icon {
+    ${tw`pr-3 flex justify-center text-xl md:text-3xl`}
   }
 `
