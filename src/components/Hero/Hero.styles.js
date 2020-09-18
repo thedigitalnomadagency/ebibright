@@ -3,6 +3,7 @@ import tw, { styled } from "twin.macro"
 export default styled.div`
   ${tw`overflow-hidden`}
   height:auto;
+  background-image: url("../../images/ndc-logo.png");
 
   @media screen and (min-width: 769px) {
     height: 35vh;
@@ -35,7 +36,7 @@ export default styled.div`
   }
 
   .message {
-    ${tw`flex flex-col justify-center px-8 py-8 `}
+    ${tw`flex flex-col justify-center lg:pr-32 py-8 px-8`}
 
     @media screen and (min-width: 769px) {
       width: 70%;
@@ -43,22 +44,25 @@ export default styled.div`
   }
 
   .message p {
-    ${tw`lg:text-sm`}
+    ${tw`lg:text-base tracking-wide`}
   }
 
   .heading {
-    ${tw`text-2xl text-center lg:text-left my-2 lg:text-5xl lg:mb-3`}
+    ${tw`text-2xl text-center lg:text-left my-2 lg:text-5xl lg:mb-3 tracking-wide`}
   }
 
   .sub-1 {
+    ${tw`font-bold`}
     color: #e4161d;
   }
 
   .sub-2 {
+    ${tw`font-bold`}
     color: #000;
   }
 
   .sub-3 {
+    ${tw`font-bold`}
     color: #096537;
   }
 `
