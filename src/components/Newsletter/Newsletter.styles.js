@@ -4,7 +4,7 @@ export default styled.div`
   ${tw`flex justify-center items-center py-10 px-8 lg:px-0`}
 
   .inner-wrapper {
-    ${tw`border border-black container grid lg:grid-cols-2 py-5 lg:px-12 lg:py-10 border-t-2 border-b-2 border-l-0 border-r-0`}
+    ${tw`container grid lg:grid-cols-2 py-5 lg:px-12 gap-3`}
   }
 
   .text {
@@ -12,11 +12,11 @@ export default styled.div`
   }
 
   .heading {
-    ${tw`lg:text-2xl font-bold tracking-wide`}
+    ${tw`lg:text-xl xl:text-2xl font-bold tracking-wide`}
   }
 
   .sub {
-    ${tw`lg:text-xl tracking-wide`}
+    ${tw`lg:text-lg xl:text-xl tracking-wide`}
   }
 
   .input-wrapper {

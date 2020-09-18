@@ -36,7 +36,7 @@ export default styled.div`
   }
 
   .message {
-    ${tw`flex flex-col justify-center lg:pr-32 py-8 px-8`}
+    ${tw`flex flex-col justify-center xl:pr-32 py-8 px-8`}
 
     @media screen and (min-width: 769px) {
       width: 70%;
@@ -44,11 +44,11 @@ export default styled.div`
   }
 
   .message p {
-    ${tw`lg:text-base tracking-wide`}
+    ${tw`lg:text-base`}
   }
 
   .heading {
-    ${tw`text-2xl text-center lg:text-left my-2 lg:text-5xl lg:mb-3 tracking-wide`}
+    ${tw`text-2xl text-center lg:text-left my-2 lg:text-4xl xl:text-5xl lg:mb-3`}
   }
 
   .sub-1 {
