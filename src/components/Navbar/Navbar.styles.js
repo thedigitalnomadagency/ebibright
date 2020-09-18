@@ -1,19 +1,18 @@
 import tw, { styled } from "twin.macro"
 
 export const Wrapper = styled.nav`
-  ${tw`shadow flex items-center`}
-  height: 10vh;
+  ${tw`shadow lg:py-5 lg:px-5`}
 
   .container {
     ${tw`container mx-auto`}
   }
 
   .logo-box {
-    ${tw`w-32`}
+    ${tw`w-32 lg:w-48`}
   }
 
   .main-menu {
-    ${tw`hidden lg:flex justify-between items-center mx-4`}
+    ${tw`hidden lg:flex justify-between items-center`}
   }
 
   .links-wrapper {
@@ -21,16 +20,16 @@ export const Wrapper = styled.nav`
   }
 
   .menu-item {
-    ${tw` mx-5 py-2 uppercase text-white  py-2 px-4 rounded text-sm`}
+    ${tw` mx-5 py-2 uppercase text-white  py-2 px-4 rounded text-sm font-bold`}
     background-color: #e4161d;
   }
 
   .mobile-menu {
-    ${tw`flex lg:hidden justify-between items-center mx-5`}
+    ${tw`flex lg:hidden justify-between items-center px-5`}
   }
 
   .donate-btn {
-    ${tw`text-white  py-1 px-2 lg:py-2 lg:px-4 rounded uppercase text-sm md:text-base lg:text-sm `}
+    ${tw`text-white  py-1 px-2 lg:py-2 lg:px-4 rounded uppercase text-sm md:text-base lg:text-sm lg:font-bold`}
     background-color: #e4161d;
   }
 

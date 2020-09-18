@@ -8,8 +8,7 @@ export default styled.div`
   }
 
   .text-box {
-    ${tw` h-64 flex justify-center items-center md:pr-10 text-lg md:tracking-wider px-4 text-center md:text-left`}
-    color: #e4161d;
+    ${tw` h-64 flex flex-col justify-center md:pr-10 text-xl md:tracking-wider px-4 text-center md:text-left`}
   }
 
   .buttons-box {
@@ -21,7 +20,7 @@ export default styled.div`
   }
 
   .btn {
-    ${tw`bg-white rounded-full px-10 py-3`}
+    ${tw`bg-white hover:bg-red-700 hover:text-white font-bold py-2 px-4 rounded-full`}
     color: #096537;
   }
 `

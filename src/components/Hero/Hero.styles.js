@@ -23,7 +23,7 @@ export default styled.div`
     padding-top: 30px;
 
     @media screen and (min-width: 769px) {
-      width: 30%;
+      width: 55%;
       height: 100%;
       padding-top: 50px;
       padding-left: 15px;
@@ -42,8 +42,12 @@ export default styled.div`
     }
   }
 
+  .message p {
+    ${tw`lg:text-sm`}
+  }
+
   .heading {
-    ${tw`text-2xl text-center lg:text-left my-2 lg:text-4xl lg:mb-3`}
+    ${tw`text-2xl text-center lg:text-left my-2 lg:text-5xl lg:mb-3`}
   }
 
   .sub-1 {
