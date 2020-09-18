@@ -4,7 +4,11 @@ export default styled.div`
   ${tw`overflow-hidden`}
   height:auto;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
+    height: 35vh;
+  }
+
+  @media screen and (min-width: 1025px) {
     height: 80vh;
   }
 
@@ -13,9 +17,10 @@ export default styled.div`
   }
 
   .image-box {
-    width: 50px;
-    height: 50px;
+    width: 60%;
     overflow: hidden;
+    margin: 0 auto;
+    padding-top: 30px;
 
     @media screen and (min-width: 769px) {
       width: 30%;
@@ -30,7 +35,7 @@ export default styled.div`
   }
 
   .message {
-    ${tw`flex flex-col justify-center px-8 `}
+    ${tw`flex flex-col justify-center px-8 py-8 `}
 
     @media screen and (min-width: 769px) {
       width: 70%;
@@ -38,7 +43,7 @@ export default styled.div`
   }
 
   .heading {
-    ${tw`lg:text-4xl lg:mb-3`}
+    ${tw`text-2xl text-center lg:text-left my-2 lg:text-4xl lg:mb-3`}
   }
 
   .sub-1 {
