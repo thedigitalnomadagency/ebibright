@@ -4,7 +4,7 @@ export default styled.div`
   ${tw`flex justify-center items-center py-10 px-8 lg:px-0`}
 
   .inner-wrapper {
-    ${tw`container grid lg:grid-cols-2 py-5 lg:px-12 gap-3`}
+    ${tw`container mx-auto grid lg:grid-cols-2 py-5 lg:px-12 gap-3`}
   }
 
   .text {
