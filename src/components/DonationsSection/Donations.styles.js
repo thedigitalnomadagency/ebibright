@@ -8,7 +8,7 @@ export default styled.div`
   }
 
   .text-box {
-    ${tw` h-64 flex flex-col justify-center md:pr-10 text-xl md:tracking-wider px-4 text-center md:text-left`}
+    ${tw` h-64 flex flex-col justify-center md:pr-10 text-2xl md:tracking-wider px-8 text-center md:text-left`}
   }
 
   .buttons-box {
