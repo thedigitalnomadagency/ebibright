@@ -3,10 +3,9 @@ import tw, { styled } from "twin.macro"
 export default styled.div`
   ${tw`overflow-hidden`}
   height:auto;
-  background-image: url("../../images/ndc-logo.png");
 
   @media screen and (min-width: 769px) {
-    height: 35vh;
+    height: auto;
   }
 
   @media screen and (min-width: 1025px) {
@@ -18,7 +17,7 @@ export default styled.div`
   }
 
   .image-box {
-    width: 60%;
+    width: 70%;
     overflow: hidden;
     margin: 0 auto;
     padding-top: 30px;
@@ -36,7 +35,7 @@ export default styled.div`
   }
 
   .message {
-    ${tw`flex flex-col justify-center xl:pr-32 py-8 px-8`}
+    ${tw`flex flex-col justify-center xl:pr-32 py-10 lg:py-16 px-8`}
 
     @media screen and (min-width: 769px) {
       width: 70%;
@@ -44,25 +43,30 @@ export default styled.div`
   }
 
   .message p {
-    ${tw`lg:text-base`}
+    ${tw`lg:text-lg`}
   }
 
   .heading {
-    ${tw`text-2xl text-center lg:text-left my-2 lg:text-4xl xl:text-5xl lg:mb-3`}
+    ${tw`text-center lg:text-left my-2 mb-2 lg:mb-3`}
+    font-size:1.7rem;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 2.5rem;
+    }
   }
 
   .sub-1 {
-    ${tw`font-bold`}
+    ${tw`font-extrabold`}
     color: #e4161d;
   }
 
   .sub-2 {
-    ${tw`font-bold`}
+    ${tw`font-extrabold`}
     color: #000;
   }
 
   .sub-3 {
-    ${tw`font-bold`}
+    ${tw`font-extrabold`}
     color: #096537;
   }
 `

@@ -12,11 +12,11 @@ export default styled.div`
   }
 
   .heading {
-    ${tw`lg:text-xl xl:text-2xl font-bold tracking-wide`}
+    ${tw`text-lg font-bold text-center lg:text-left lg:text-xl xl:text-3xl  tracking-wide pr-10`}
   }
 
   .sub {
-    ${tw`lg:text-lg xl:text-xl tracking-wide`}
+    ${tw`lg:text-lg xl:text-2xl tracking-wide pr-10`}
   }
 
   .input-wrapper {

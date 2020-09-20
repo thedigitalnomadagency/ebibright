@@ -20,12 +20,15 @@ export const Wrapper = styled.nav`
   }
 
   .menu-item {
-    ${tw` mx-5 py-2 uppercase text-white  py-2 px-4 rounded text-sm font-bold`}
-    background-color: #e4161d;
+    ${tw` mx-5 py-2 uppercase text-black hover:text-white  py-2 px-4 text-lg tracking-wide`}
+
+    &:hover {
+      background-color: #e4161d;
+    }
   }
 
   .mobile-menu {
-    ${tw`flex lg:hidden justify-between items-center px-5`}
+    ${tw`flex lg:hidden justify-between items-center px-5 py-4`}
   }
 
   .donate-btn {
@@ -34,6 +37,6 @@ export const Wrapper = styled.nav`
   }
 
   .menu-icon {
-    ${tw`pr-3 flex justify-center text-xl md:text-3xl`}
+    ${tw`pr-3 flex justify-center text-2xl md:text-3xl outline-none`}
   }
 `
