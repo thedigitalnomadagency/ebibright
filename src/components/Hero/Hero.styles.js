@@ -43,7 +43,7 @@ export default styled.div`
   }
 
   .message p {
-    ${tw`lg:text-lg`}
+    ${tw`text-lg`}
   }
 
   .heading {
