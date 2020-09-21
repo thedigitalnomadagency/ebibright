@@ -1,14 +1,14 @@
 import tw, { styled } from "twin.macro"
 
 export const Wrapper = styled.nav`
-  ${tw`shadow lg:py-3 lg:px-24 flex items-center`}
+  ${tw`shadow lg:py-3 lg:px-12 xl:px-24 flex items-center`}
 
   .container {
     ${tw`container mx-auto`}
   }
 
   .logo-box {
-    ${tw`w-32 lg:w-48`}
+    ${tw`w-56`}
   }
 
   .main-menu {
@@ -20,7 +20,7 @@ export const Wrapper = styled.nav`
   }
 
   .menu-item {
-    ${tw` mx-5 py-2 uppercase text-black hover:text-white  py-2 px-4 text-base font-bold tracking-wide`}
+    ${tw` lg:mx-0 xl:mx-5 py-2 uppercase text-black hover:text-white  py-2 px-4 text-base font-bold tracking-wide`}
 
     &:hover {
       background-color: var(--ndc-red);

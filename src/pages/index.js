@@ -82,7 +82,7 @@ export default () => {
         </div>
 
         <div className="donation-section">
-          <div className="inner-wrapper">
+          <div className="donations-inner-wrapper">
             <div className="text-box">
               <p>{Math.floor(diffInDays)} DAYS LEFT</p>
               <br />
@@ -200,17 +200,35 @@ const Wrapper = styled.div`
     overflow: hidden;
 
     @media screen and (min-width: 768px) {
+      height: 61vh;
+    }
+
+    @media screen and (min-width: 1024px) {
+      height: 40vh;
+    }
+
+    @media screen and (min-width: 1280px) {
       height: 100vh;
     }
   }
 
   .hero {
-    ${tw`container grid lg:grid-cols-2 bg-white shadow-md lg:shadow-none`}
+    ${tw`container grid lg:grid-cols-2 bg-white`}
     width: 90%;
     height: auto;
-    margin: -300px auto 0 auto;
+    margin: -272px auto 0 auto;
 
     @media screen and (min-width: 768px) {
+      width: 83%;
+      margin-top: -467px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 95%;
+      margin-top: -438px;
+    }
+
+    @media screen and (min-width: 1280px) {
       width: 95%;
       margin-top: -550px;
     }
@@ -263,12 +281,12 @@ const Wrapper = styled.div`
     color: #fff;
   }
 
-  .inner-wrapper {
-    ${tw`container mx-auto md:px-10 md:grid md:grid-cols-2`}
+  .donations-inner-wrapper {
+    ${tw`container mx-auto md:px-10 md:grid md:grid-cols-2 py-5`}
   }
 
   .text-box {
-    ${tw` h-64 flex flex-col justify-center md:pr-10 text-2xl md:tracking-wider px-8 text-center md:text-left`}
+    ${tw` flex flex-col justify-center md:pr-10 text-2xl md:tracking-wider  px-8 text-center md:text-left`}
   }
 
   .buttons-box {
@@ -296,12 +314,12 @@ const Wrapper = styled.div`
     ${tw`lg:pt-10 `}
 
     .heading {
-      ${tw`text-xl font-bold text-center lg:text-left lg:text-xl xl:text-3xl  tracking-wide lg:pr-10`}
+      ${tw`text-xl font-bold text-center md:text-left lg:text-xl xl:text-3xl  tracking-wide lg:pr-10`}
     }
   }
 
   .sub {
-    ${tw`text-lg text-center lg:text-left lg:text-lg xl:text-2xl tracking-wide lg:pr-10`}
+    ${tw`text-lg text-center md:text-left lg:text-lg xl:text-2xl tracking-wide lg:pr-10`}
   }
 
   .form {
