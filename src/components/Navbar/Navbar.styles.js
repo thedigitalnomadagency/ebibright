@@ -1,7 +1,7 @@
 import tw, { styled } from "twin.macro"
 
 export const Wrapper = styled.nav`
-  ${tw`shadow lg:py-5 lg:px-5`}
+  ${tw`shadow lg:py-3 lg:px-24 flex items-center`}
 
   .container {
     ${tw`container mx-auto`}
@@ -20,10 +20,10 @@ export const Wrapper = styled.nav`
   }
 
   .menu-item {
-    ${tw` mx-5 py-2 uppercase text-black hover:text-white  py-2 px-4 text-lg tracking-wide`}
+    ${tw` mx-5 py-2 uppercase text-black hover:text-white  py-2 px-4 text-base font-bold tracking-wide`}
 
     &:hover {
-      background-color: #e4161d;
+      background-color: var(--ndc-red);
     }
   }
 
@@ -33,7 +33,7 @@ export const Wrapper = styled.nav`
 
   .donate-btn {
     ${tw`text-white  py-1 px-2 lg:py-2 lg:px-4 rounded uppercase text-sm md:text-base lg:text-sm lg:font-bold`}
-    background-color: #e4161d;
+    background-color: var(--ndc-red);
   }
 
   .menu-icon {
