@@ -1,9 +1,9 @@
 import React from "react"
 
 //components
-import Layout from "../components/Layout/Layout"
+import Layout from "../components/Layout"
 
-export default function Home() {
+export default () => {
   return (
     <Layout>
       <h1>Meet Ebi</h1>
