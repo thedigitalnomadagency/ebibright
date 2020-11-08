@@ -9,11 +9,11 @@ export default ({ thumb, videoSrc }) => {
   const [open, setOpen] = React.useState(false)
 
   const handleOpen = () => {
-    setOpenCart(true)
+    setOpen(true)
   }
 
   const handleClose = () => {
-    setOpenCart(false)
+    setOpen(false)
   }
 
   return (
