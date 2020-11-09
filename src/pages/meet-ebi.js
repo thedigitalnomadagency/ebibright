@@ -780,7 +780,7 @@ const ImageBox = styled.div`
   @media screen and (min-width: 768px) {
     right: 0;
     width: 500px;
-    height: 82vh;
+    height: 80vh;
   }
 `
 
