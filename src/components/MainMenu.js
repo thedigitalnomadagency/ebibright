@@ -16,7 +16,7 @@ export default ({ logo, flag }) => {
   const links = [
     {
       text: "Meet Ebi",
-      link: "/",
+      link: "/meet-ebi",
     },
     {
       text: "My Plans",

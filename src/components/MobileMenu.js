@@ -62,7 +62,7 @@ export default ({ logo }) => {
     },
     {
       text: "Meet Ebi",
-      link: "/",
+      link: "/meet-ebi",
     },
     {
       text: "My Plans",
@@ -133,10 +133,6 @@ export default ({ logo }) => {
     </Hidden>
   )
 }
-
-const Flag = styled(Img)`
-  width: 80px;
-`
 
 const Logo = styled(Img)`
   width: 150px;

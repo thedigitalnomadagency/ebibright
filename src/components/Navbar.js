@@ -8,7 +8,7 @@ import Mobile from "./MobileMenu"
 export default () => {
   const data = useStaticQuery(graphql`
     {
-      logo: file(relativePath: { eq: "main-logo.png" }) {
+      logo: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid_noBase64

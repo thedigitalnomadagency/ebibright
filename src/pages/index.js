@@ -24,7 +24,7 @@ export default () => {
       <Heading>
         <h1 className="heading">
           <span className="sub-1">Together</span>{" "}
-          <span className="sub-2">The</span>{" "}
+          <span className="sub-2">the</span>{" "}
           <span className="sub-3">Right Way</span>
         </h1>
       </Heading>
@@ -34,26 +34,19 @@ export default () => {
       />
       <Message>
         <p>
-          The urgency of our problems needs fresh, bold and the right solutions!
+          The urgency of our problems needs fresh, bold and the right solutions.
         </p>
         <br />
 
         <p>
-          I am running to be a Member of Parliament to champion bold ideas and
-          the right way of doing things. So together we can provide fair and
-          nonpartisan opportunities to all people of Tema Central Constituency,
-          not just a few.
+          I am running as a Candidate for Parliament for the Tema Central
+          Constituency to champion bold ideas and the right way of doing things.
         </p>
         <br />
 
         <p>
-          I call my 2020 Election Campaign for the Tema Central Constituency
-          seat <span className="sub-3">THE</span>{" "}
-          <span className="sub-1">RIGHT</span>{" "}
-          <span className="sub-2">CAMPAIGN</span>. This is because, for me
-          having lived in Tema Central for 27 years, serving my constituents is
-          not just about who can make a difference, but who can make the right
-          difference.
+          I believe we can provide nonpartisan and fair opportunities to all
+          people of Tema Central, not just few.
         </p>
         <br />
 
@@ -78,9 +71,10 @@ const Heading = styled.div`
     text-align: center;
     font-size: 30px;
     padding: 10px;
+    font-weight: 600;
 
     @media screen and (min-width: 768px) {
-      font-size: 50px;
+      font-size: 70px;
     }
   }
 
@@ -100,6 +94,7 @@ const Heading = styled.div`
 const Message = styled.div`
   padding: 20px;
   font-size: 20px;
+  color: var(--text-color);
 
   .sub-1 {
     color: var(--ndc-red);

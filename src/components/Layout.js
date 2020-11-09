@@ -33,7 +33,7 @@ export default ({ children }) => {
         {children}
       </Container>
 
-      {/* <Footer /> */}
+      <Footer />
     </ThemeProvider>
   )
 }
