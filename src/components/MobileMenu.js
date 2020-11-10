@@ -70,11 +70,7 @@ export default ({ logo }) => {
     },
     {
       text: "Take Action",
-      link: "/",
-    },
-    {
-      text: "Donate",
-      link: "/",
+      link: "/take-action",
     },
   ]
 

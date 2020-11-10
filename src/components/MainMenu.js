@@ -24,11 +24,7 @@ export default ({ logo, flag }) => {
     },
     {
       text: "Take Action",
-      link: "/",
-    },
-    {
-      text: "Donate",
-      link: "/",
+      link: "/take-action",
     },
   ]
   return (
@@ -50,9 +46,9 @@ export default ({ logo, flag }) => {
                   justify="center"
                   alignItems="center"
                 >
-                  {links.map(link => {
+                  {links.map((link, idx) => {
                     return (
-                      <Grid item xs={2}>
+                      <Grid item xs={2} key={idx}>
                         <StyledButton
                           size="large"
                           component={Link}

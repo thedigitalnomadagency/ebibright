@@ -30,7 +30,7 @@ export default () => {
       </Heading>
       <Video
         thumb={data.thumb.childImageSharp.fluid}
-        videoSrc="https://www.youtube.com/embed/2bC_WzRV6VI"
+        videoSrc="https://www.youtube.com/embed/Q5FyhOmRQOA"
       />
       <Message>
         <p>

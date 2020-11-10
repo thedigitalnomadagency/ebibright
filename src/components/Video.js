@@ -49,6 +49,7 @@ export default ({ thumb, videoSrc }) => {
 
 const Video = styled.div`
   position: relative;
+  margin: 10px 0;
 `
 
 const Icon = styled(PlayIcon)`
