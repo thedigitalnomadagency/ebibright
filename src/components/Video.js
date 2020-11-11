@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import IconButton from "@material-ui/core/IconButton"
 import PlayIcon from "@material-ui/icons/PlayCircleFilled"
 import Dialog from "@material-ui/core/Dialog"
+import Tooltip from "@material-ui/core/Tooltip"
 
 export default ({ thumb, videoSrc }) => {
   const [open, setOpen] = React.useState(false)
@@ -19,15 +20,17 @@ export default ({ thumb, videoSrc }) => {
   return (
     <Video>
       <Overlay>
-        <IconButton
-          edge="start"
-          color="inherit"
-          aria-label="play"
-          style={{ outline: "none" }}
-          onClick={handleOpen}
-        >
-          <Icon />
-        </IconButton>
+        <Tooltip title="Play Video">
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="play"
+            style={{ outline: "none" }}
+            onClick={handleOpen}
+          >
+            <Icon />
+          </IconButton>
+        </Tooltip>
       </Overlay>
       <Thumb fluid={thumb} />
 

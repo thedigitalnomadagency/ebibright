@@ -66,7 +66,7 @@ export default ({ logo }) => {
     },
     {
       text: "My Plans",
-      link: "/",
+      link: "/my-plans",
     },
     {
       text: "Take Action",

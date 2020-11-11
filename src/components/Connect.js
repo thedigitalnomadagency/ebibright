@@ -8,7 +8,6 @@ import Twitter from "@material-ui/icons/Twitter"
 import Facebook from "@material-ui/icons/Facebook"
 import Instagram from "@material-ui/icons/Instagram"
 import YouTube from "@material-ui/icons/YouTube"
-import Phone from "@material-ui/icons/Phone"
 
 export default () => {
   return (

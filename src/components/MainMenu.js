@@ -20,7 +20,7 @@ export default ({ logo, flag }) => {
     },
     {
       text: "My Plans",
-      link: "/",
+      link: "/my-plans",
     },
     {
       text: "Take Action",
