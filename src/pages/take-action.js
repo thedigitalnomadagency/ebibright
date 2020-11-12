@@ -50,7 +50,7 @@ export default () => {
         </Heading>
 
         <GridWrapper container spacing={5}>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} md={12} lg={4}>
             <div className="plan-box plan-box-1">
               <h1 className="reason">Reason 1</h1>
               <p className="text">
@@ -64,7 +64,7 @@ export default () => {
               </p>
             </div>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} md={12} lg={4}>
             <div className="plan-box plan-box-2">
               <h1 className="reason">Reason 2</h1>
               <p className="text">
@@ -81,7 +81,7 @@ export default () => {
             </div>
           </Grid>
 
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} md={12} lg={4}>
             <div className="plan-box plan-box-3">
               <h1 className="reason">Reason 3</h1>
               <p className="text">

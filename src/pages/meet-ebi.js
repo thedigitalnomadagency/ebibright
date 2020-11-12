@@ -381,7 +381,8 @@ export default () => {
             <Grid
               item
               xs={12}
-              sm={6}
+              md={12}
+              lg={6}
               style={{
                 display: "flex",
                 flexDirection: "column",
@@ -508,7 +509,7 @@ export default () => {
               </p>
             </Grid>
 
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} md={12} lg={6}>
               <div
                 style={{
                   display: "flex",
@@ -535,7 +536,7 @@ export default () => {
           </Grid>
 
           <Grid container>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} md={12} lg={6}>
               <div
                 style={{
                   display: "flex",
@@ -552,7 +553,8 @@ export default () => {
             <Grid
               item
               xs={12}
-              sm={6}
+              md={12}
+              lg={6}
               style={{
                 display: "flex",
                 flexDirection: "column",
@@ -742,6 +744,11 @@ export const Overlay = styled.div`
 
   @media screen and (min-width: 768px) {
     height: 80vh;
+    padding-left: 50px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    height: 80vh;
     padding-left: 150px;
   }
 
@@ -788,6 +795,10 @@ const Logo = styled(Img)`
   width: 160px;
 
   @media screen and (min-width: 768px) {
+    width: 500px;
+  }
+
+  @media screen and (min-width: 1025px) {
     width: 650px;
   }
 `

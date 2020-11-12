@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { styled } from "twin.macro"
 import { Link } from "gatsby"
+import { addData } from "../firebase/firebase-utils"
 
 //mui
 import Grid from "@material-ui/core/Grid"
@@ -15,6 +16,8 @@ import Facebook from "@material-ui/icons/Facebook"
 import Instagram from "@material-ui/icons/Instagram"
 import YouTube from "@material-ui/icons/YouTube"
 import Phone from "@material-ui/icons/WhatsApp"
+import Snackbar from "@material-ui/core/Snackbar"
+import Close from "@material-ui/icons/Close"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -29,14 +32,70 @@ export default () => {
     }
   `)
 
+  let message = ""
+
+  const [formData, setData] = React.useState({
+    name: "",
+    phone: "",
+  })
+
+  const [open, setOpen] = React.useState(false)
+
+  const handleClose = (_, reason) => {
+    if (reason === "clickaway") {
+      return
+    }
+
+    setOpen(false)
+  }
+
+  const handleChange = e => {
+    const { name, value } = e.target
+
+    setData({
+      ...formData,
+      [name]: value,
+    })
+  }
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+
+    try {
+      if (formData.name === "" && formData.phone === "") {
+        console.log("Fields cannot be empty. Try Again")
+        return
+      }
+
+      await addData(formData)
+
+      setOpen(true)
+
+      setData({
+        name: "",
+        phone: "",
+      })
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
   return (
     <Wrapper>
       <Container maxWidth="lg" disableGutters={true}>
         <Grid container spacing={5}>
-          <Grid1 item xs={12} sm={4}>
+          <Grid item xs={12} md={12} lg={4}>
             <form noValidate autoComplete="off">
               <h2 className="form-title">Stay in touch</h2>
-              <Input id="name" label="Name" variant="outlined" fullWidth />
+              <Input
+                name="name"
+                label="Name"
+                variant="outlined"
+                type="text"
+                fullWidth
+                value={formData.name}
+                onChange={handleChange}
+              />
 
               <div
                 style={{
@@ -45,8 +104,20 @@ export default () => {
                   alignItems: "center",
                 }}
               >
-                <Input id="phone" label="Phone" variant="outlined" />
-                <Button variant="contained" color="secondary" size="large">
+                <Input
+                  name="phone"
+                  label="Phone"
+                  variant="outlined"
+                  type="number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  size="large"
+                  onClick={handleSubmit}
+                >
                   Submit
                 </Button>
               </div>
@@ -86,10 +157,10 @@ export default () => {
                 <YouTube />
               </IconButton>
               <Phone />
-              <h3 className="phone"> : 0541285644</h3>
+              <h3 className="phone"> : 0233818181</h3>
             </div>
-          </Grid1>
-          <Grid2 item xs={12} sm={4}>
+          </Grid>
+          <Grid item xs={12} md={12} lg={4}>
             <h1>
               <Link to="/">Home</Link>
             </h1>
@@ -108,15 +179,38 @@ export default () => {
             <h1>
               <Link to="/">Privacy Policy</Link>
             </h1>
-          </Grid2>
-          <Grid3 item xs={12} sm={4}>
+          </Grid>
+          <Grid item xs={12} md={12} lg={4}>
             <Img fluid={data.logo.childImageSharp.fluid} />
             <p style={{ marginTop: 20, fontSize: 18 }}>
               © Copyright 2020. All rights reserved.
             </p>
-          </Grid3>
+          </Grid>
         </Grid>
       </Container>
+
+      <Snackbar
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "right",
+        }}
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message={`Thank you ,${formData.name} ,for connecting with us`}
+        action={
+          <React.Fragment>
+            <IconButton
+              size="small"
+              aria-label="close"
+              color="inherit"
+              onClick={handleClose}
+            >
+              <Close fontSize="small" />
+            </IconButton>
+          </React.Fragment>
+        }
+      />
     </Wrapper>
   )
 }
@@ -165,6 +259,3 @@ const Wrapper = styled.div`
 const Input = styled(TextField)`
   margin-bottom: 10px;
 `
-const Grid1 = styled(Grid)``
-const Grid2 = styled(Grid)``
-const Grid3 = styled(Grid)``

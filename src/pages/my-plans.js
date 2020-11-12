@@ -35,7 +35,7 @@ export default () => {
         </div>
 
         <GridWrapper container spacing={2}>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} md={12} lg={4}>
             <Link to="/my-plans/right-accountability">
               <div className="plan-box">
                 <h1>Right Accountability Plans</h1>
@@ -57,7 +57,7 @@ export default () => {
               </div>
             </Link>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} md={12} lg={4}>
             <Link to="/my-plans/right-opportunity">
               <div className="plan-box">
                 <h1>Right Opportunity Plans</h1>
@@ -80,7 +80,7 @@ export default () => {
               </div>
             </Link>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} md={12} lg={4}>
             <Link to="/my-plans/right-care">
               <div className="plan-box">
                 <h1>Right Care Plans</h1>
@@ -153,11 +153,15 @@ const Wrapper = styled.div`
   }
 
   .plan-box {
-    height: 415px;
+    height: 500px;
     background-color: #ecf0f1;
     color: var(--ndc-black);
     cursor: pointer;
     padding: 23px;
+
+    @media screen and (min-width: 1024px) {
+      height: 415px;
+    }
 
     &:hover {
       background-color: var(--ndc-green);
