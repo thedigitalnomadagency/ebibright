@@ -1,5 +1,6 @@
 import React from "react"
 import tw, { styled } from "twin.macro"
+import { addContactData } from "../firebase/firebase-utils"
 
 //mui
 import Button from "@material-ui/core/Button"
@@ -8,8 +9,68 @@ import Twitter from "@material-ui/icons/Twitter"
 import Facebook from "@material-ui/icons/Facebook"
 import Instagram from "@material-ui/icons/Instagram"
 import YouTube from "@material-ui/icons/YouTube"
+import Snackbar from "@material-ui/core/Snackbar"
+import Close from "@material-ui/icons/Close"
 
 export default () => {
+  const [formData, setData] = React.useState({
+    firstName: "",
+    number: "",
+    location: "",
+    address: "",
+    email: "",
+  })
+
+  const [open, setOpen] = React.useState(false)
+
+  const handleClose = (_, reason) => {
+    if (reason === "clickaway") {
+      return
+    }
+
+    setOpen(false)
+  }
+
+  const handleChange = e => {
+    const { name, value } = e.target
+
+    setData({
+      ...formData,
+      [name]: value,
+    })
+  }
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+
+    try {
+      if (
+        formData.firstName === "" &&
+        formData.number === "" &&
+        formData.location === "" &&
+        formData.address === "" &&
+        formData.email === ""
+      ) {
+        console.log("Fields cannot be empty. Try Again")
+        return
+      }
+
+      await addContactData(formData)
+
+      setOpen(true)
+
+      setData({
+        firstName: "",
+        number: "",
+        location: "",
+        address: "",
+        email: "",
+      })
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
   return (
     <Wrapper>
       <div className="inner-wrapper">
@@ -62,14 +123,26 @@ export default () => {
             <label className="label" htmlFor="firstName">
               First Name:
             </label>
-            <input className="input" name="firstName" type="text" />
+            <input
+              className="input"
+              name="firstName"
+              type="text"
+              onChange={handleChange}
+              value={formData.firstName}
+            />
           </div>
 
           <div className="input-wrapper">
             <label className="label" htmlFor="number">
               Phone Number:
             </label>
-            <input className="input" name="number" type="number" />
+            <input
+              className="input"
+              name="number"
+              type="number"
+              onChange={handleChange}
+              value={formData.number}
+            />
           </div>
 
           <div className="input-wrapper">
@@ -78,7 +151,13 @@ export default () => {
             </label>
 
             <div className="select">
-              <select className="input" id="grid-state">
+              <select
+                className="input"
+                name="location"
+                onChange={handleChange}
+                value={formData.location}
+              >
+                <option></option>
                 <option>Coummunity 1, Tema</option>
                 <option>Coummunity 2, Tema</option>
                 <option>Coummunity 3, Tema</option>
@@ -115,21 +194,62 @@ export default () => {
             <label className="label" htmlFor="address">
               Digital Address:
             </label>
-            <input className="input" name="address" type="text" />
+            <input
+              className="input"
+              name="address"
+              type="text"
+              onChange={handleChange}
+              value={formData.address}
+              placeholder="GK-0000-0000"
+            />
           </div>
 
           <div className="input-wrapper">
             <label className="label" htmlFor="email">
               Email:
             </label>
-            <input className="input" id="email" type="email" />
+            <input
+              className="input"
+              name="email"
+              type="email"
+              onChange={handleChange}
+              value={formData.email}
+            />
           </div>
 
-          <StyledButton variant="contained" color="primary" size="large">
+          <StyledButton
+            variant="contained"
+            color="primary"
+            size="large"
+            onClick={handleSubmit}
+          >
             Connect
           </StyledButton>
         </form>
       </div>
+
+      <Snackbar
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "left",
+        }}
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message={`Thank you for connecting with us`}
+        action={
+          <React.Fragment>
+            <IconButton
+              size="small"
+              aria-label="close"
+              color="inherit"
+              onClick={handleClose}
+            >
+              <Close fontSize="small" />
+            </IconButton>
+          </React.Fragment>
+        }
+      />
     </Wrapper>
   )
 }

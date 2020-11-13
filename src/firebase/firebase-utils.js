@@ -32,3 +32,20 @@ export const addData = async data => {
 
   return
 }
+
+export const addContactData = async data => {
+  const docRef = firestore.doc(`contactForm/${data.email}`)
+  const docSnapshot = await docRef.get()
+
+  if (!docSnapshot.exists) {
+    try {
+      await docRef.set({
+        ...data,
+      })
+    } catch (err) {
+      throw new Error(`error, ${err.message}`)
+    }
+  }
+
+  return
+}

@@ -32,8 +32,6 @@ export default () => {
     }
   `)
 
-  let message = ""
-
   const [formData, setData] = React.useState({
     name: "",
     phone: "",
@@ -197,7 +195,7 @@ export default () => {
         open={open}
         autoHideDuration={6000}
         onClose={handleClose}
-        message={`Thank you ,${formData.name} ,for connecting with us`}
+        message={`Thank you for connecting with us`}
         action={
           <React.Fragment>
             <IconButton

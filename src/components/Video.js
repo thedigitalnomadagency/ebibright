@@ -2,7 +2,7 @@ import React from "react"
 import { styled } from "twin.macro"
 import Img from "gatsby-image"
 import IconButton from "@material-ui/core/IconButton"
-import PlayIcon from "@material-ui/icons/PlayCircleFilled"
+import YouTube from "@material-ui/icons/YouTube"
 import Dialog from "@material-ui/core/Dialog"
 import Tooltip from "@material-ui/core/Tooltip"
 
@@ -40,7 +40,7 @@ export default ({ thumb, videoSrc }) => {
             title="video player"
             style={{ height: "100%", width: "100%" }}
             src={videoSrc}
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullscreen
           ></iframe>
@@ -55,8 +55,9 @@ const Video = styled.div`
   margin: 10px 0;
 `
 
-const Icon = styled(PlayIcon)`
+const Icon = styled(YouTube)`
   font-size: 75px;
+  color: var(--ndc-red);
 
   @media screen and (min-width: 768px) {
     height: 90px;
