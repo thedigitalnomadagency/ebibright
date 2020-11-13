@@ -42,7 +42,7 @@ export default ({ thumb, videoSrc }) => {
             src={videoSrc}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullscreen
+            allowFullScreen
           ></iframe>
         </Player>
       </Dialog>
