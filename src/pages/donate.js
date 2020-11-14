@@ -55,7 +55,10 @@ export default () => {
           <Grid item xs={12} md={6}>
             <div className="grid-item">
               <h1 style={{ fontWeight: 600, fontSize: 40 }}>
-                EVERY LITTLE COUNTS. SUPPORT THE RIGHT CAMPAIGN
+                <span className="sub-1">EVERY</span>{" "}
+                <span className="sub-2">LITTLE</span>{" "}
+                <span className="sub-3">COUNTS</span>. SUPPORT THE RIGHT
+                CAMPAIGN
               </h1>
             </div>
           </Grid>
@@ -65,7 +68,7 @@ export default () => {
               <h1 style={{ fontWeight: 600, fontSize: 20 }}>
                 Choose an amount:{" "}
               </h1>
-              <p>Your contribution will help with The Right Campaign</p>
+              <p>Your contribution will help elect Ms. Ebi Bright</p>
               <form className="form">
                 <div className="radio">
                   <label
@@ -223,6 +226,18 @@ const Wrapper = styled.div`
     padding: 10px 10px;
     @media screen and (min-width: 768px) {
       margin: 80px auto;
+    }
+
+    .sub-1 {
+      color: var(--ndc-red);
+    }
+
+    .sub-2 {
+      color: var(--ndc-black);
+    }
+
+    .sub-3 {
+      color: var(--ndc-green);
     }
   }
 

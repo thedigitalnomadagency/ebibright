@@ -18,6 +18,7 @@ import YouTube from "@material-ui/icons/YouTube"
 import Phone from "@material-ui/icons/WhatsApp"
 import Snackbar from "@material-ui/core/Snackbar"
 import Close from "@material-ui/icons/Close"
+import Email from "@material-ui/icons/Email"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -160,6 +161,10 @@ export default () => {
               </IconButton>
               <Phone />
               <h3 className="phone"> : 0233818181</h3>
+              <div style={{ display: "flex" }}>
+                <Email />
+                <h3 className="phone"> : campaign@ebibright.com</h3>
+              </div>
             </div>
           </Grid>
           <Grid item xs={12} md={12} lg={4}>
@@ -237,6 +242,7 @@ const Wrapper = styled.div`
   .socials {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .phone {

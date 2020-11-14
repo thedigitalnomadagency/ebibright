@@ -51,8 +51,8 @@ export default () => {
                 </p>
 
                 <p>
-                  To achieve this,I have come up with a set of initiatives under
-                  my Right Accountability Plans that will always keep me
+                  To achieve this, I have come up with a set of initiatives
+                  under my Right Accountability Plans that will always keep me
                   accountable to the good people of Tema Central.
                 </p>
                 <p style={{ marginTop: 10, fontWeight: 700 }}>
@@ -78,7 +78,10 @@ export default () => {
                   <p>&#8226; Youth Development </p>
                   <p>&#8226; Employment</p>
                   <p>
-                    &#8226; Start-ups (Entrepreneurship) and small businesses
+                    &#8226; Start-ups (Entrepreneurship) and small
+                    <span style={{ display: "block", marginLeft: 10 }}>
+                      businesses
+                    </span>
                   </p>
                   <p>&#8226; Sports, E-sports and Professional Gaming </p>
                   <p style={{ marginTop: 10, fontWeight: 700 }}>
