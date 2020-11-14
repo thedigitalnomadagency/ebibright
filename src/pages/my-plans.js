@@ -34,7 +34,7 @@ export default () => {
           <Thumb fluid={data.thumb.childImageSharp.fluid} />
         </div>
 
-        <GridWrapper container spacing={2}>
+        <GridWrapper container>
           <Grid item xs={12} md={12} lg={4}>
             <Link to="/my-plans/right-accountability">
               <div className="plan-box">
@@ -42,14 +42,18 @@ export default () => {
                 <p>
                   My Right Accountability Plans are about leading inclusively
                   and transparently. It is about putting the interest of the
-                  constituents I serve first before my politics. Even though I
-                  am running as an NDC Candidate, I will serve everyone in Tema
-                  Central equally and fairly, irrespective of their party. I
-                  will not be the kind of MP that only focuses on just a few,
-                  mostly party people, around them. To achieve this, I have come
-                  up with a set of initiatives under my Right Accountability
-                  Plans that will always keep me accountable to the good people
-                  of Tema Central.
+                  constituents I serve first before my politics.
+                </p>
+                <p>
+                  Even though I am running as an NDC Candidate, I will serve
+                  everyone in Tema Central equally and fairly, irrespective of
+                  their party.
+                </p>
+
+                <p>
+                  To achieve this,I have come up with a set of initiatives under
+                  my Right Accountability Plans that will always keep me
+                  accountable to the good people of Tema Central.
                 </p>
                 <p style={{ marginTop: 10, fontWeight: 700 }}>
                   Click to learn more about these plans.
@@ -64,15 +68,19 @@ export default () => {
                 <p>
                   Under my Right Opportunity Plans, I have come up with simple
                   policies that will help create opportunities for young people
-                  and develop the human capital of constituency.
+                  and develop the human capital of the Tema Central
+                  Constituency.
                   <p>
                     As part of my Right Opportunity Plans I have initiatives in:{" "}
                   </p>
-                  <p>- Education</p>
-                  <p>- Youth Development </p>
-                  <p>- Employment</p>
-                  <p>- Start-ups (Entrepreneurship) and small businesses</p>
-                  <p>- Sports, E-sports and Professional Gaming </p>
+                  {/* <!--add bullet point--> */}
+                  <p>&#8226; Education</p>
+                  <p>&#8226; Youth Development </p>
+                  <p>&#8226; Employment</p>
+                  <p>
+                    &#8226; Start-ups (Entrepreneurship) and small businesses
+                  </p>
+                  <p>&#8226; Sports, E-sports and Professional Gaming </p>
                   <p style={{ marginTop: 10, fontWeight: 700 }}>
                     Click to learn more about these plans.
                   </p>
@@ -86,18 +94,24 @@ export default () => {
                 <h1>Right Care Plans</h1>
                 <p>
                   My Right Care Plan is about providing support and social
-                  protection for our vulnerable community members as well as for
-                  our children, women, and workers. It is also about keeping our
-                  environment clean and about our safety needs in the community.{" "}
+                  protection for our vulnerable community members, including our
+                  children, women, as well as the rights of workers and
+                  businesses located in Tema Central.
                 </p>
 
                 <p>
-                  More importantly, my Right Care Plans are about working to
-                  build sustainable safety nets for vulnerable community members
-                  to ensure that resources meant for collective use and
-                  constituency development are not diverted to reward
-                  individuals for their electoral support or to take care of the
-                  personal needs of a few constituents.
+                  I want to courageously lead the building of sustainable safety
+                  nets for vulnerable community members to ensure that resources
+                  meant for collective use and constituency development are not
+                  diverted to take care of the personal needs or to reward a few
+                  groups of constituents for their electoral support.
+                </p>
+
+                <p>
+                  As part of my Right Care Plans, I will also focus on the
+                  cleanliness and waste collection management within our
+                  communities as well as the safety and security needs of the
+                  community.
                 </p>
 
                 <p style={{ marginTop: 10, fontWeight: 700 }}>
@@ -153,14 +167,15 @@ const Wrapper = styled.div`
   }
 
   .plan-box {
-    height: 500px;
+    height: 550px;
     background-color: #ecf0f1;
     color: var(--ndc-black);
     cursor: pointer;
     padding: 23px;
+    margin-bottom: 15px;
 
     @media screen and (min-width: 1024px) {
-      height: 415px;
+      margin: 10px 5px;
     }
 
     &:hover {
@@ -172,6 +187,10 @@ const Wrapper = styled.div`
       font-size: 25px;
       font-weight: 700;
       padding-bottom: 9px;
+    }
+
+    p {
+      margin-top: 10px;
     }
   }
 `

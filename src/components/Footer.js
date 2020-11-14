@@ -39,6 +39,8 @@ export default () => {
 
   const [open, setOpen] = React.useState(false)
 
+  const [message, setMessage] = React.useState("")
+
   const handleClose = (_, reason) => {
     if (reason === "clickaway") {
       return
@@ -61,12 +63,14 @@ export default () => {
 
     try {
       if (formData.name === "" && formData.phone === "") {
-        console.log("Fields cannot be empty. Try Again")
+        setMessage("Fields cannot be empty. Try Again")
+        setOpen(true)
         return
       }
 
       await addData(formData)
 
+      setMessage(`Thank you for connecting with us`)
       setOpen(true)
 
       setData({
@@ -74,7 +78,7 @@ export default () => {
         phone: "",
       })
     } catch (err) {
-      console.log(err)
+      setMessage(err.message)
     }
   }
 
@@ -166,16 +170,16 @@ export default () => {
               <Link to="/meet-ebi">Meet Ebi</Link>
             </h1>
             <h1>
-              <Link to="/">My Plans</Link>
+              <Link to="/my-plans">My Plans</Link>
             </h1>
             <h1>
-              <Link to="/">Take Action</Link>
+              <Link to="/take-action">Take Action</Link>
             </h1>
-            {/* <h1>
-              <Link to="/">Donate</Link>
-            </h1> */}
             <h1>
-              <Link to="/">Privacy Policy</Link>
+              <Link to="/donate">Donate</Link>
+            </h1>
+            <h1>
+              <Link to="#">Privacy Policy</Link>
             </h1>
           </Grid>
           <Grid item xs={12} md={12} lg={4}>
@@ -195,7 +199,7 @@ export default () => {
         open={open}
         autoHideDuration={6000}
         onClose={handleClose}
-        message={`Thank you for connecting with us`}
+        message={message}
         action={
           <React.Fragment>
             <IconButton

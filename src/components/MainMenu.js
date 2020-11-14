@@ -26,6 +26,10 @@ export default ({ logo, flag }) => {
       text: "Take Action",
       link: "/take-action",
     },
+    {
+      text: "Donate",
+      link: "/donate",
+    },
   ]
   return (
     <Hidden smDown>
@@ -78,7 +82,7 @@ const StyledButton = styled(Button)`
   font-size: 13px;
   &:hover {
     background-color: var(--ndc-red);
-    color: var(--ndc-black);
+    color: #fff;
   }
 
   @media screen and (min-width: 1051px) {

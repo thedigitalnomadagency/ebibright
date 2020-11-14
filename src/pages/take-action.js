@@ -49,7 +49,7 @@ export default () => {
           </h1>
         </Heading>
 
-        <GridWrapper container spacing={5}>
+        <GridWrapper container>
           <Grid item xs={12} md={12} lg={4}>
             <div className="plan-box plan-box-1">
               <h1 className="reason">Reason 1</h1>
@@ -193,6 +193,10 @@ const Wrapper = styled.div`
     color: #fff;
     cursor: pointer;
     padding: 15px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      margin: 10px 5px;
+    }
 
     &-1 {
       background-color: var(--ndc-black);

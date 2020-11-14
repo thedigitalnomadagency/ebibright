@@ -341,7 +341,7 @@ export default () => {
             <p>
               Irrespective of the appointing Government, I will build a close
               working relationship with the local assembly structure – Tema
-              Metropolitan Assembly (TMA), Assemblymen and Women and Unit
+              Metropolitan Assembly (TMA), Assembly Men and Women and Unit
               Committee Members.
             </p>
             <h1>Why</h1>
@@ -349,24 +349,38 @@ export default () => {
             <div>
               <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
               <p>
-                Many voters, wrongly, believe that MPs are m responsible for
-                fixing most of the development challenges that the constituency
-                faces. This is because we candidates for Parliament have
-                collectively created a misleading impression to voters that they
-                should look up mainly to MPs to fix the developmental challenges
-                of the community. Yet the Local Assembly, not MPs, are given
-                most funds for community development.
+                I want to build a community that is united; a community whose
+                progress is not hampered because the MP belongs to one party and
+                the Tema Mayor, or the Assembly Men and Women or the Unit
+                Committee members belong to another party.
               </p>
             </div>
 
             <div>
               <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
               <p>
-                I want to build a community that is united; a community whose
-                progress is not hampered because the MP belongs to one party and
-                the Tema Mayor, or the Assemblymen and Women or Unit Committee
-                members belong to another party, so there is friction working
-                together.
+                Many voters, wrongly, believe that MPs are responsible for
+                fixing most of the development challenges that our communities
+                face. This is because we candidates for Parliament have
+                collectively created a misleading impression to voters that they
+                should look up mainly to MPs to fix the developmental challenges
+                of the community. Yet fixing our development challenges at the
+                community level is one of the primary responsibilities of the
+                Local Assembly and the appointed Mayor or District Chief
+                Executive (DCE), not the MP. Indeed the Local Assemblies have
+                their challenges, but overall they are better resourced than MPs
+                to handle our local development needs. The TMA, for example, has
+                expertise with about 16 different departments, such as the
+                Education, Youth and Sports Department, Physical Planning
+                Department, Social Welfare and Community Development Department,
+                etc. and more importantly the funding from the District Assembly
+                Common Fund (DACF) and Internally Generated Funds (IGF) to drive
+                development within our communities. The MP does not have
+                available to him or her these resources. If elected as MP, I am
+                determined to work very cordially and closely with the TMA and
+                be a strong voice for development advocacy for Tema Central. I
+                want to ensure that the MP and the Local Assembly structure are
+                both working purposefully for the development of Tema Central.
               </p>
             </div>
 
@@ -383,8 +397,8 @@ export default () => {
             <div>
               <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
               <p>
-                Build a strong working relationship with the TMA, Assemblymen
-                and women and Unit Committee Members to address our community
+                Build a strong working relationship with the TMA, Assembly Men
+                and Women and Unit Committee Members to address our community
                 challenges properly, so we call contribute towards working to
                 fix Tema Central to make it the envy of other constituencies.
               </p>

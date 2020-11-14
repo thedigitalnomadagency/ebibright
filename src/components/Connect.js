@@ -22,6 +22,7 @@ export default () => {
   })
 
   const [open, setOpen] = React.useState(false)
+  const [message, setMessage] = React.useState("")
 
   const handleClose = (_, reason) => {
     if (reason === "clickaway") {
@@ -51,12 +52,13 @@ export default () => {
         formData.address === "" &&
         formData.email === ""
       ) {
-        console.log("Fields cannot be empty. Try Again")
+        setMessage("Fields cannot be empty. Try Again")
+        setOpen(true)
         return
       }
 
       await addContactData(formData)
-
+      setMessage(`Thank you for connecting with us`)
       setOpen(true)
 
       setData({
@@ -236,7 +238,7 @@ export default () => {
         open={open}
         autoHideDuration={6000}
         onClose={handleClose}
-        message={`Thank you for connecting with us`}
+        message={message}
         action={
           <React.Fragment>
             <IconButton
