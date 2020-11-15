@@ -127,38 +127,52 @@ export default () => {
             </form>
 
             <div className="socials">
-              <IconButton
-                edge="start"
-                color="inherit"
-                aria-label="twitter"
-                style={{ outline: "none" }}
+              <a href="https://twitter.com/ebibright" target="_blank">
+                <IconButton
+                  edge="start"
+                  color="inherit"
+                  aria-label="twitter"
+                  style={{ outline: "none" }}
+                >
+                  <Twitter />
+                </IconButton>
+              </a>
+
+              <a href="https://facebook.com/ebibright" target="_blank">
+                <IconButton
+                  edge="start"
+                  color="inherit"
+                  aria-label="facebook"
+                  style={{ outline: "none" }}
+                >
+                  <Facebook />
+                </IconButton>
+              </a>
+
+              <a href="https://instagram.com/ebibright" target="_blank">
+                <IconButton
+                  edge="start"
+                  color="inherit"
+                  aria-label="instagram"
+                  style={{ outline: "none" }}
+                >
+                  <Instagram />
+                </IconButton>
+              </a>
+
+              <a
+                href="https://www.youtube.com/channel/UC8DSKQsctedS8kSxtXrqo-w"
+                target="_blank"
               >
-                <Twitter />
-              </IconButton>
-              <IconButton
-                edge="start"
-                color="inherit"
-                aria-label="facebook"
-                style={{ outline: "none" }}
-              >
-                <Facebook />
-              </IconButton>
-              <IconButton
-                edge="start"
-                color="inherit"
-                aria-label="instagram"
-                style={{ outline: "none" }}
-              >
-                <Instagram />
-              </IconButton>
-              <IconButton
-                edge="start"
-                color="inherit"
-                aria-label="youtube"
-                style={{ outline: "none" }}
-              >
-                <YouTube />
-              </IconButton>
+                <IconButton
+                  edge="start"
+                  color="inherit"
+                  aria-label="youtube"
+                  style={{ outline: "none" }}
+                >
+                  <YouTube />
+                </IconButton>
+              </a>
               <Phone />
               <h3 className="phone"> : 0233818181</h3>
               <div style={{ display: "flex" }}>
@@ -184,7 +198,7 @@ export default () => {
               <Link to="/donate">Donate</Link>
             </h1>
             <h1>
-              <Link to="#">Privacy Policy</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </h1>
           </Grid>
           <Grid item xs={12} md={12} lg={4}>

@@ -10,8 +10,8 @@ import Video from "../../components/Video"
 import Accordion from "@material-ui/core/Accordion"
 import AccordionDetails from "@material-ui/core/AccordionDetails"
 import AccordionSummary from "@material-ui/core/AccordionSummary"
-import Typography from "@material-ui/core/Typography"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
+import Arrow2 from "@material-ui/icons/ArrowForwardIos"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -39,7 +39,7 @@ export default () => {
         videoSrc="https://www.youtube.com/embed/DrR89C1j9d0"
       />
 
-      <AccordionWrapper>
+      {/* <AccordionWrapper>
         <StyledAccordion
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
@@ -49,16 +49,46 @@ export default () => {
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
-            <h1 className="heading">Sub Heading</h1>
+            <h1 className="heading">
+             
+            </h1>
           </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-              feugiat. Aliquam eget maximus est, id dignissim quam.
-            </Typography>
-          </AccordionDetails>
+          <Details>
+            <p>
+              
+            </p>
+
+            <h1>Why</h1>
+
+            <div>
+              <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
+              <p>
+                I want to ensure that once I am voted as MP for Tema Central, we
+                will all put the party politics of the campaign behind us and
+                forge forward together with the right way.
+              </p>
+            </div>
+
+            
+            
+
+          
+
+            <h1>How</h1>
+
+            <div>
+              <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
+              <p>
+                The office would be open on weekdays from 8 am – 5 pm and have a
+                full-time staff that would attend to Constituents that visit the
+                office.
+              </p>
+            </div>
+
+            
+          </Details>
         </StyledAccordion>
-      </AccordionWrapper>
+      </AccordionWrapper> */}
     </Layout>
   )
 }
@@ -67,13 +97,13 @@ const AccordionWrapper = styled.div`
   margin: 25px 0;
 
   .heading {
-    font-size: 20px;
-    text-transform: capitalize;
+    font-size: 18px;
     max-width: "90%";
     font-weight: 400px;
+    color: var(--ndc-red);
 
     @media screen and (min-width: 768px) {
-      font-size: 42px;
+      font-size: 35px;
       line-height: 50px;
     }
   }
@@ -81,4 +111,26 @@ const AccordionWrapper = styled.div`
 
 const StyledAccordion = styled(Accordion)`
   padding: 15px 0;
+`
+
+const Details = styled(AccordionDetails)`
+  flex-direction: column;
+
+  h1 {
+    color: #fff;
+    background-color: var(--ndc-green);
+    border-radius: 150px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  div {
+    display: flex;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
 `

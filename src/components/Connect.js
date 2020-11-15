@@ -85,38 +85,52 @@ export default () => {
           </p>
 
           <div className="socials">
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="twitter"
-              style={{ outline: "none" }}
+            <a href="https://twitter.com/ebibright" target="_blank">
+              <IconButton
+                edge="start"
+                color="inherit"
+                aria-label="twitter"
+                style={{ outline: "none" }}
+              >
+                <Twitter style={{ fontSize: 40 }} />
+              </IconButton>
+            </a>
+
+            <a href="https://facebook.com/ebibright" target="_blank">
+              <IconButton
+                edge="start"
+                color="inherit"
+                aria-label="facebook"
+                style={{ outline: "none" }}
+              >
+                <Facebook style={{ fontSize: 40 }} />
+              </IconButton>
+            </a>
+
+            <a href="https://instagram.com/ebibright" target="_blank">
+              <IconButton
+                edge="start"
+                color="inherit"
+                aria-label="instagram"
+                style={{ outline: "none" }}
+              >
+                <Instagram style={{ fontSize: 40 }} />
+              </IconButton>
+            </a>
+
+            <a
+              href="https://www.youtube.com/channel/UC8DSKQsctedS8kSxtXrqo-w"
+              target="_blank"
             >
-              <Twitter style={{ fontSize: 40 }} />
-            </IconButton>
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="facebook"
-              style={{ outline: "none" }}
-            >
-              <Facebook style={{ fontSize: 40 }} />
-            </IconButton>
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="instagram"
-              style={{ outline: "none" }}
-            >
-              <Instagram style={{ fontSize: 40 }} />
-            </IconButton>
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="youtube"
-              style={{ outline: "none" }}
-            >
-              <YouTube style={{ fontSize: 40 }} />
-            </IconButton>
+              <IconButton
+                edge="start"
+                color="inherit"
+                aria-label="youtube"
+                style={{ outline: "none" }}
+              >
+                <YouTube style={{ fontSize: 40 }} />
+              </IconButton>
+            </a>
           </div>
         </div>
 

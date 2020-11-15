@@ -170,7 +170,7 @@ const Wrapper = styled.div`
   }
 
   .plan-box {
-    height: 550px;
+    height: 570px;
     background-color: #ecf0f1;
     color: var(--ndc-black);
     cursor: pointer;
