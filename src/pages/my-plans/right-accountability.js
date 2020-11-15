@@ -182,14 +182,22 @@ export default () => {
                 <span style={{ fontWeight: 600 }}>
                   I will do this in two ways:
                 </span>
-                <p>
-                  1. Once a month, I will organize town hall meetings which will
-                  be open to all people of Tema Central.
-                </p>
-                <p>
-                  2. Be available in the Constituency Office, at least two times
-                  a month to meet directly with my constituents.
-                </p>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Once a month, I will organize town hall meetings which will
+                    be open to all people of Tema Central.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Beavailable in the Constituency Office, at least two times a
+                    month to meet directly with my constituents.
+                  </p>
+                </div>
               </p>
             </div>
 
@@ -200,16 +208,23 @@ export default () => {
                   During the town-hall meetings or one-on-one meetings at the
                   Constituency Office, I will be able to :
                 </span>
-                <p>
-                  1. Update and explain to my Constituents matters already
-                  discussed in Parliament and share with them the Agenda of
-                  upcoming issues to be considered in Parliament to seek their
-                  opinions.
-                </p>
-                <p>
-                  2. Provide updates on development projects within our
-                  community.
-                </p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Update and explain to my Constituents matters already
+                    discussed in Parliament and share with them the Agenda of
+                    upcoming issues to be considered in Parliament to seek their
+                    opinions.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Provide updates on development projects within our
+                    community.
+                  </p>
+                </div>
               </p>
             </div>
           </Details>
@@ -333,7 +348,7 @@ export default () => {
             id="panel5bh-header"
           >
             <h1 className="heading">
-              Promote a strong and cordial working relationship with the local
+              Foster a strong and cordial working relationship with the local
               assembly structure
             </h1>
           </AccordionSummary>
@@ -359,28 +374,34 @@ export default () => {
             <div>
               <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
               <p>
-                Many voters, wrongly, believe that MPs are responsible for
-                fixing most of the development challenges that our communities
-                face. This is because we candidates for Parliament have
-                collectively created a misleading impression to voters that they
-                should look up mainly to MPs to fix the developmental challenges
-                of the community. Yet fixing our development challenges at the
-                community level is one of the primary responsibilities of the
-                Local Assembly and the appointed Mayor or District Chief
-                Executive (DCE), not the MP. Indeed the Local Assemblies have
-                their challenges, but overall they are better resourced than MPs
-                to handle our local development needs. The TMA, for example, has
-                expertise with about 16 different departments, such as the
-                Education, Youth and Sports Department, Physical Planning
-                Department, Social Welfare and Community Development Department,
-                etc. and more importantly the funding from the District Assembly
-                Common Fund (DACF) and Internally Generated Funds (IGF) to drive
+                We as candidates for Parliament have collectively created a
+                misleading impression to voters that they should look up mainly
+                to MPs to fix the developmental challenges of the community. Yet
+                fixing our development challenges at the community level is one
+                of the primary responsibilities of the Local Assembly and the
+                appointed Mayor or District Chief Executive (DCE), not the MP.
+                The Local Assemblies are given more resources to handle our
+                local development needs. The TMA, for example, has expertise
+                with about 16 different departments, such as the Education,
+                Youth and Sports Department, Physical Planning Department,
+                Social Welfare and Community Development Department, etc. and
+                more importantly the funding from the District Assembly Common
+                Fund (DACF) and Internally Generated Funds (IGF) to drive
                 development within our communities. The MP does not have
                 available to him or her these resources. If elected as MP, I am
-                determined to work very cordially and closely with the TMA and
-                be a strong voice for development advocacy for Tema Central. I
-                want to ensure that the MP and the Local Assembly structure are
-                both working purposefully for the development of Tema Central.
+                determined to foster a nonpartisan cohesive working with the TMA
+                and other Assembly Members to effectively channel these
+                resources towards the development of Tema Central.
+              </p>
+            </div>
+
+            <div>
+              <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
+              <p>
+                I will be a strong voice for development advocacy and lobby for
+                Tema Central to ensure that the MP and the Local Assembly
+                structure are both working purposefully for the development our
+                communities.
               </p>
             </div>
 

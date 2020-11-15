@@ -63,9 +63,7 @@ export default () => {
             <div>
               <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
               <p>
-                I want to ensure that once I am voted as MP for Tema Central, we
-                will all put the party politics of the campaign behind us and
-                forge forward together with the right way.
+                
               </p>
             </div>
 
@@ -79,9 +77,7 @@ export default () => {
             <div>
               <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
               <p>
-                The office would be open on weekdays from 8 am – 5 pm and have a
-                full-time staff that would attend to Constituents that visit the
-                office.
+                
               </p>
             </div>
 

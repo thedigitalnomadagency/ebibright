@@ -73,7 +73,6 @@ export default () => {
                   <p>
                     As part of my Right Opportunity Plans I have initiatives in:{" "}
                   </p>
-                  {/* <!--add bullet point--> */}
                   <p>&#8226; Education</p>
                   <p>&#8226; Youth Development </p>
                   <p>&#8226; Employment</p>

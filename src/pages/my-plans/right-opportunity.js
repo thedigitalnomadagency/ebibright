@@ -67,9 +67,13 @@ export default () => {
             <div>
               <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
               <p>
-                I want to ensure that once I am voted as MP for Tema Central, we
-                will all put the party politics of the campaign behind us and
-                forge forward together with the right way.
+                As I move around, I noticed that in some Tema Central
+                neighbourhoods our school children do not have adequate and
+                comfortable spaces to do their homework and after school
+                studies. It is common to see children sitting on small stools on
+                their compounds or in front of their parents' shops trying to do
+                their homework or learn, especially in the evenings. The
+                environment often has poor lightening and uncomfortable sitting.
               </p>
             </div>
 
@@ -122,13 +126,17 @@ export default () => {
             aria-controls="panel2bh-content"
             id="panel2bh-header"
           >
-            <h1 className="heading">Organise the TC Solutions Challenge</h1>
+            <h1 className="heading">
+              Organise the{" "}
+              <span style={{ fontWeight: 600 }}>TC Solutions Challenge</span>
+            </h1>
           </AccordionSummary>
           <Details>
             <p>
-              The second of the two initiatives I have for education the TC
-              Solution Challenge. I hope through this initiative; I can promote
-              an engaged education for students in Tema Central.
+              The second of the two initiatives I have for education is the{" "}
+              <span style={{ fontWeight: 600 }}>TC Solutions Challenge</span>. I
+              hope through this initiative; I can promote an engaged education
+              for students in Tema Central.
             </p>
 
             <p>
@@ -262,16 +270,20 @@ export default () => {
             id="panel4bh-header"
           >
             <h1 className="heading">
-              Setup TC Connect – a digitised platform to help job seekers and
-              small businesses in Tema Central
+              Setup <span style={{ fontWeight: 600 }}>TC Connect</span> – a
+              digitised platform to help job seekers and small businesses in
+              Tema Central
             </h1>
           </AccordionSummary>
           <Details>
             <p>
-              Honest but difficult truth: I cannot promise my constituents I
-              will give them jobs. This is because an MPs role as a lawmaker
-              does not make it easy to focus on creating the large number of
-              sustainable jobs we need for young people in Tema Central.
+              <span style={{ fontWeight: 600 }}>
+                Honest but difficult truth:
+              </span>{" "}
+              I cannot promise my constituents I will give them jobs. This is
+              because an MPs role as a lawmaker does not make it easy to focus
+              on creating the large number of sustainable jobs we need for young
+              people in Tema Central.
             </p>
 
             <p>
@@ -282,10 +294,11 @@ export default () => {
             </p>
 
             <p>
-              So, I have put together a simple solution. I call it TC Connect.
-              TC Connect is a digitised platform that will help job seekers and
-              small businesses in Tema Central connect with employment
-              opportunities and business services in the general Tema area.
+              So, I have put together a simple solution. I call it{" "}
+              <span style={{ fontWeight: 600 }}>TC Connect</span>. TC Connect is
+              a digitised platform that will help job seekers and small
+              businesses in Tema Central connect with employment opportunities
+              and business services in the general Tema area.
             </p>
 
             <h1>Why</h1>
@@ -318,35 +331,51 @@ export default () => {
                   the community to consumers in Tema Central and the Tema
                   Metropolis at large
                 </span>
-                <p>
-                  1.To do this, I will build the TC Connect database that
-                  compiles a list, description, and contacts of all small
-                  business and service providers in Tema Central
-                </p>
-                <p>
-                  2. TC Connect can be accessed on mobile or web app, USSD or
-                  through a phone call.
-                </p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    To do this, I will build the TC Connect database that
+                    compiles a list, description, and contacts of all small
+                    business and service providers in Tema Central
+                  </p>
+                </div>
 
-                <p>
-                  3. Consumers in Tema Central can therefore now easily find and
-                  access goods and services close to them, instead of going
-                  outside the community to find similar services.
-                </p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    TC Connect can be accessed on mobile or web app, USSD or
+                    through a phone call.
+                  </p>
+                </div>
 
-                <p>
-                  4. Example, when a constituent is looking for someone to braid
-                  their hair at home, or a make-up artist, a plumber, a Fridge
-                  or an AC Repairer, a Mechanic, a Private Tutor for their Kids,
-                  a Driver, an Electrician, etc., they can use TC Connect to
-                  find that service provider from the community.
-                </p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Consumers in Tema Central can therefore now easily find and
+                    access goods and services close to them, instead of going
+                    outside the community to find similar services.
+                  </p>
+                </div>
 
-                <p>
-                  5.By connecting businesses to consumers in Tema Central this
-                  way, we can help each other grow, expand our businesses, and
-                  generate employment from within Tema Central.
-                </p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Example, when a constituent is looking for someone to braid
+                    their hair at home, or a make-up artist, a plumber, a Fridge
+                    or an AC Repairer, a Mechanic, a Private Tutor for their
+                    Kids, a Driver, an Electrician, etc., they can use TC
+                    Connect to find that service provider from the community.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    By connecting businesses to consumers in Tema Central this
+                    way, we can help each other grow, expand our businesses, and
+                    generate employment from within Tema Central.
+                  </p>
+                </div>
               </p>
             </div>
 
@@ -357,30 +386,42 @@ export default () => {
                   Second – Connect job seekers in Tema Central to employment
                   opportunities within the constituency.
                 </span>
-                <p>
-                  1.Put together short profiles and skillsets of all
-                  constituents seeking employment in Tema Central into the TC
-                  Connect database. The database will be regularly updated.
-                </p>
-                <p>
-                  2. Information of jobseekers on the TC Connect platform will
-                  be shared with all employers and businesses in Tema so that
-                  anytime they are seeking to employ they have a one-stop portal
-                  to search for matching candidates in Tema Central. This gives
-                  the opportunity to persons seeking employment in Tema Central
-                  first, before considering others outside Tema Central.
-                </p>
 
-                <p>
-                  3. I believe this would be a win-win situation for both the
-                  community and the businesses that operate in the community.
-                  For these businesses, by employing community members, who live
-                  within the catchment area of their business, they would be
-                  cutting commute times as well as the transport cost of their
-                  workers. Importantly, it will be a way for these businesses
-                  and employers to give back to the Tema Central community in
-                  which they operate.
-                </p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Put together short profiles and skillsets of all
+                    constituents seeking employment in Tema Central into the TC
+                    Connect database. The database will be regularly updated.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Information of jobseekers on the TC Connect platform will be
+                    shared with all employers and businesses in Tema so that
+                    anytime they are seeking to employ they have a one-stop
+                    portal to search for matching candidates in Tema Central.
+                    This gives the opportunity to persons seeking employment in
+                    Tema Central first, before considering others outside Tema
+                    Central.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    I believe this would be a win-win situation for both the
+                    community and the businesses that operate in the community.
+                    For these businesses, by employing community members, who
+                    live within the catchment area of their business, they would
+                    be cutting commute times as well as the transport cost of
+                    their workers. Importantly, it will be a way for these
+                    businesses and employers to give back to the Tema Central
+                    community in which they operate.
+                  </p>
+                </div>
               </p>
             </div>
           </Details>
@@ -516,13 +557,15 @@ export default () => {
             id="panel7bh-header"
           >
             <h1 className="heading">
-              Organise the TC Showcase - a quarterly carnival in Tema Central
+              Organise the <span style={{ fontWeight: 600 }}>TC Showcase</span>{" "}
+              - a quarterly carnival in Tema Central
             </h1>
           </AccordionSummary>
           <Details>
             <p>
-              The TC Showcase would be a 3-day weekend quarterly festival that
-              brings together the community to participate in business and arts.
+              The <span style={{ fontWeight: 600 }}>TC Showcase</span> would be
+              a 3-day weekend quarterly festival that brings together the
+              community to participate in business and arts.
             </p>
             <h1>Why</h1>
 
@@ -563,19 +606,40 @@ export default () => {
                   of TC Showcase is promoting the arts and sciences in Tema
                   Central. This would include:
                 </span>
-                <p>
-                  1.Unearthing music talent – by giving opportunities for new
-                  music talents in the community to perform live on stage.
-                </p>
-                <p>2.Community members organising drama shows</p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Unearthing music talent – by giving opportunities for new
+                    music talents in the community to perform live on stage.
+                  </p>
+                </div>
 
-                <p>3.Comic performances</p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Community members organising drama shows
+                  </p>
+                </div>
 
-                <p>4.Art exhibitions</p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>Comic performances</p>
+                </div>
 
-                <p>5.Science exhibitions</p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>Art exhibitions</p>
+                </div>
 
-                <p>6.Other talent exhibitions</p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>Science exhibitions</p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>Other talent exhibitions</p>
+                </div>
               </p>
             </div>
           </Details>
@@ -623,10 +687,27 @@ export default () => {
               <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
               <p>
                 <span style={{ fontWeight: 600 }}>Football:</span>
-                <p>1.Setup a 20-team league for residents in Tema Central.</p>
-                <p>2.The league will run for ten months each year.</p>
 
-                <p>3.Prize money for winners of the league.</p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Setup a 20-team league for residents in Tema Central.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    The league will run for ten months each year.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Prize money for winners of the league.
+                  </p>
+                </div>
               </p>
             </div>
 
@@ -634,10 +715,26 @@ export default () => {
               <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
               <p>
                 <span style={{ fontWeight: 600 }}>Basketball:</span>
-                <p>1.Setup a 20-team league for residents in Tema Central.</p>
-                <p>2.The league will run for ten months each year.</p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Setup a 20-team league for residents in Tema Central.
+                  </p>
+                </div>
 
-                <p>3.Prize money for winners of the league.</p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    The league will run for ten months each year.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Prize money for winners of the league.
+                  </p>
+                </div>
               </p>
             </div>
 
@@ -645,19 +742,32 @@ export default () => {
               <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
               <p>
                 <span style={{ fontWeight: 600 }}>Draft Games:</span>
-                <p>
-                  1.Set-up a draft competition based on a point-based league
-                  structure where 150 – 200 residents can participate.
-                </p>
-                <p>
-                  2.It will start with community qualifiers, e.g. players in
-                  Community 9 will play among each other. Winners within
-                  communities move to play with other players from other
-                  communities in the next round until a champion is crowned for
-                  Tema Central.
-                </p>
 
-                <p>3.Prize money for the person who wins the draft league.</p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Set-up a draft competition based on a point-based league
+                    structure where 150 – 200 residents can participate.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    It will start with community qualifiers, e.g. players in
+                    Community 9 will play among each other. Winners within
+                    communities move to play with other players from other
+                    communities in the next round until a champion is crowned
+                    for Tema Central.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Prize money for the person who wins the draft league.
+                  </p>
+                </div>
               </p>
             </div>
 
@@ -665,25 +775,36 @@ export default () => {
               <Arrow2 style={{ fontSize: 20, color: "red" }} />{" "}
               <p>
                 <span style={{ fontWeight: 600 }}>E-sports & Gaming:</span>
-                <p>
-                  1.E-sports is a sports competition using video games. In 2019
-                  the e-sports industry made 1.1 billion dollars in revenue. It
-                  has over 500 million people viewing gaming competitions from
-                  all over the world online and on TV.
-                </p>
-                <p>
-                  2. These days playing games and e-sports is not just for
-                  entertainment. It is now a big global professional sport.
-                </p>
 
-                <p>
-                  3.Tema Central has a lot of young people who enjoy playing
-                  games and e-sports. I will support the infrastructure needed
-                  to organise gaming competitions. Through these competitions,
-                  we can unearth talents that can participate in international
-                  gaming and e-sports competitions such as the NBA 2K League,
-                  FIFA Interactive World Cup (FIWC), etc.
-                </p>
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    E-sports is a sports competition using video games. In 2019
+                    the e-sports industry made 1.1 billion dollars in revenue.
+                    It has over 500 million people viewing gaming competitions
+                    from all over the world online and on TV.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    These days playing games and e-sports is not just for
+                    entertainment. It is now a big global professional sport.
+                  </p>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  &#8226;{"  "}
+                  <p style={{ marginLeft: 5 }}>
+                    Tema Central has a lot of young people who enjoy playing
+                    games and e-sports. I will support the infrastructure needed
+                    to organise gaming competitions. Through these competitions,
+                    we can unearth talents that can participate in international
+                    gaming and e-sports competitions such as the NBA 2K League,
+                    FIFA Interactive World Cup (FIWC), etc.
+                  </p>
+                </div>
               </p>
             </div>
           </Details>
