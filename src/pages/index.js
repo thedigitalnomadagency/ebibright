@@ -45,7 +45,7 @@ export default () => {
         <br />
 
         <p>
-          I believe we can provide nonpartisan and fair opportunities to all
+          I believe we can provide equal and fair opportunities to all
           people of Tema Central, not just few.
         </p>
         <br />

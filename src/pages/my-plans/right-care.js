@@ -297,7 +297,7 @@ export default () => {
                 </span>
 
                 <div style={{ display: "flex" }}>
-                  &#8226;{"  "}
+                  <span style={{ fontWeight: 600 }}> 1.</span>
                   <p style={{ marginLeft: 5 }}>
                     I will create "Bin Points" which will operate in a small
                     kiosk, similar to a lotto or mobile money kiosks.
@@ -305,7 +305,7 @@ export default () => {
                 </div>
 
                 <div style={{ display: "flex" }}>
-                  &#8226;{"  "}
+                  <span style={{ fontWeight: 600 }}> 2.</span>
                   <p style={{ marginLeft: 5 }}>
                     Instead of waiting to have bulk cash to pay for waste
                     collection monthly, residents can now visit these "Bin
@@ -315,7 +315,7 @@ export default () => {
                 </div>
 
                 <div style={{ display: "flex" }}>
-                  &#8226;{"  "}
+                  <span style={{ fontWeight: 600 }}> 3.</span>
                   <p style={{ marginLeft: 5 }}>
                     Once the resident pays, e.g. GHS 2 at the "Bin Point", the
                     resident will be given a unique (Tema Central branded) bin
@@ -324,7 +324,7 @@ export default () => {
                 </div>
 
                 <div style={{ display: "flex" }}>
-                  &#8226;{"  "}
+                  <span style={{ fontWeight: 600 }}> 4.</span>
                   <p style={{ marginLeft: 5 }}>
                     When the waste collection trucks come around, they will only
                     pick up waste in this particular bin rubber bags.
@@ -332,7 +332,7 @@ export default () => {
                 </div>
 
                 <div style={{ display: "flex" }}>
-                  &#8226;{"  "}
+                  <span style={{ fontWeight: 600 }}> 5.</span>
                   <p style={{ marginLeft: 5 }}>
                     This way, those who pay and receive these unique bin rubber
                     bags will get their waste collected. Those who do not want
@@ -342,7 +342,7 @@ export default () => {
                 </div>
 
                 <div style={{ display: "flex" }}>
-                  &#8226;{"  "}
+                  <span style={{ fontWeight: 600 }}> 6.</span>
                   <p style={{ marginLeft: 5 }}>
                     Monies collected at the "Bin Points" will be used to pay the
                     Waste Management Companies, so that they do not have to
@@ -516,10 +516,7 @@ export default () => {
                 It is a common occurrence for MPs to be invited to grace and
                 support social events, e.g. funerals, marriage ceremonies, etc
                 in the community. Traditionally, MPs provide material and
-                financial support for these events. support social events, e.g.
-                funerals, marriage ceremonies, etc in the community.
-                Traditionally, MPs provide material and financial support for
-                these events.
+                financial support for these events.
               </p>
             </div>
 
