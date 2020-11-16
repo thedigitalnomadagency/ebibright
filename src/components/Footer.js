@@ -194,9 +194,9 @@ export default () => {
             <h1>
               <Link to="/take-action">Take Action</Link>
             </h1>
-            <h1>
+            {/* <h1>
               <Link to="/donate">Donate</Link>
-            </h1>
+            </h1> */}
             <h1>
               <Link to="/privacy-policy">Privacy Policy</Link>
             </h1>

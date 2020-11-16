@@ -110,10 +110,8 @@ export default () => {
                 </p>
 
                 <p>
-                  As part of my Right Care Plans, I will also focus on the
-                  cleanliness and waste collection management within our
-                  communities as well as the safety and security needs of the
-                  community.
+                  As part of my Right Care Plans, I will also focus on
+                  sanitation, safety and security needs of the community.
                 </p>
 
                 <p style={{ marginTop: 10, fontWeight: 700 }}>
