@@ -85,8 +85,8 @@ export default () => {
             <div className="plan-box plan-box-3">
               <h1 className="reason">Reason 3</h1>
               <p className="text">
-                ften, after the elections, the average Voter does not benefit or
-                get the attention of their MP. It is always the people in the
+                Often, after the elections, the average Voter does not benefit
+                or get the attention of their MP. It is always the people in the
                 party close to the MP who seem to benefit the most. Yet the MP
                 relies on the vote of the average Voter to get elected. I
                 promise to be an MP for all of you equally, with no favouritism.
@@ -188,7 +188,7 @@ const Wrapper = styled.div`
   }
 
   .plan-box {
-    height: 335px;
+    height: 360px;
     background-color: #ecf0f1;
     color: #fff;
     cursor: pointer;
