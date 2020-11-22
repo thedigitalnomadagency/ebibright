@@ -188,7 +188,7 @@ const Wrapper = styled.div`
   }
 
   .plan-box {
-    height: 360px;
+    height: 400px;
     background-color: #ecf0f1;
     color: #fff;
     cursor: pointer;
